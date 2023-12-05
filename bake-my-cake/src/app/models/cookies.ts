@@ -1,11 +1,11 @@
-export type Cookies = {
+export type Cookie = {
     id?: number;
     name?: string;
     price?: string;
     imageURL?: string;
     description?:string;
 }
-export const Cookies: Cookies[] = [
+export const Cookies: Cookie[] = [
     { id: 1, name: 'Cookie Monster Cookie',price:'2.95', description:'With a signature blue vanilla dough that stands out for all the best reasons and a incredible lineups of mix-ins like caramel bites, oreos, mini marshmallows, and chocolate chips.'},
     { id: 2, name: 'Rudolphs Favorite',price:'2.95', description:'This red cookie will certainly be the first to catch your eye. Red velvet dough with savory creamcheese chip. Do not mistake her density for merely surface-level indulgence.'},
     { id: 3, name: 'Chocolate Mint Cookie',price:'2.95',description:'Our take on a favorite flavor combo. A warm dark chocolate cookie with mint chips and chunks of milk chocolate.'},
