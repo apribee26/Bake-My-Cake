@@ -1,0 +1,42 @@
+
+
+ <div class="container">
+    <div *ngFor="let gift of gifts" class="card">
+    <section>
+        <div>
+            <img src ="../../assets/images/1sid.png">
+          
+        </div>
+    </section>
+ 
+    <section>
+      
+        <div>
+            <h1 class="dessheader">{{allGifts}}</h1>
+            <div class="card-content">
+                <div class="card-body">
+                    <h4>{{gift?.name}}</h4>
+                    <span>{{gift?.description}} </span>
+                 </div>
+            </div>
+            <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+                <img src="../assets/images/{{gift?.imageURL}}.jpg" alt="" width="280px" height="250px">
+                <mat-card-content>
+                    <h4>{{gift?.name}}</h4>
+                    <span>${{gift?.price}}</span>
+                    <span>{{gift?.description}}</span>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                    <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        </section>
+        </div>
+    </div>
+        <h1 class="dessheader">{{allCookies}}</h1>
+        <h1 class="dessheader">{{allBrownies}}</h1>
+        <h1 class="dessheader">{{allCakes}}</h1>
+    
+<footer></footer>

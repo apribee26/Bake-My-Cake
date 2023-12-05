@@ -1,0 +1,72 @@
+<!-- Header -->
+<section>
+    <mat-toolbar id="header">
+        <h2>Sid's</h2>
+        <div id=icons>
+            <a href="http://localhost:4200/"><mat-icon>home</mat-icon></a>
+            <a href=""><mat-icon>apps</mat-icon></a>
+            <a href=""><mat-icon>settings</mat-icon></a>
+        </div>
+    </mat-toolbar>
+</section>
+
+<!-- Search -->
+<app-search></app-search>
+
+<!-- Dashboard -->
+<section>
+    <div>
+        <img src="../../assets/images/1sid.png" class="sid1">
+    </div>
+</section>
+
+<section>
+        <h1 class="dessheader">{{allGifts}}</h1>
+        <div class="container">
+        <div *ngFor="let gift of gifts" class="card">
+            <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+                <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+                    <img src="../assets/images/{{gift?.imageURL}}.jpg" alt="" width="280px" height="250px">
+                    <mat-card-content>
+                        <h4>{{gift?.name}}</h4>
+                        <span>${{gift?.price}}</span>
+                        <br>
+                        <span>{{gift?.description}}</span>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                    </mat-card-actions>
+                </mat-card>
+            <!-- </a> -->
+        <!-- <mat-card mat-ripple [matRippleCentered]="true" class="mat-card-content">
+            <img src="../assets/images/{{gift?.imageURL}}.jpg" alt="" width="280px" height="250px">
+            <mat-card-content>
+                <h4>{{gift?.name}}</h4>
+                <span>${{gift?.price}}</span>
+                <br>
+                <span>{{gift?.description}}</span>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+            </mat-card-actions>
+        </mat-card> -->
+            </div>
+        </div>
+
+    <div>
+        <h1 class="dessheader">{{allCookies}}</h1>
+    </div>
+</section>
+
+   
+    <!-- <h1 class="dessheader">{{allBrownies}}</h1>
+    <h1 class="dessheader">{{allCakes}}</h1> -->
+<!-- Cookies -->
+
+
+<!-- Brownies -->
+
+
+<!-- Cakes -->

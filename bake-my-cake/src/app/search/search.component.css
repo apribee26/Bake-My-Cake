@@ -1,0 +1,22 @@
+button {
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px 3px;
+    margin: 5px;
+}
+
+.search-box{   
+    text-align: center;
+    margin-top: 40px;
+    width: 230px;
+    padding: 5px;
+    margin-left: 40%;
+}
+ 
+input[type=text] {
+    border: 1px solid black;
+    padding: 5px; 
+}

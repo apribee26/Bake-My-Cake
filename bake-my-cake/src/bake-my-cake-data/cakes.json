@@ -1,0 +1,22 @@
+{
+    "cakes": [
+      {
+        "id": 1,
+        "name": "Bring Dessert Cookie Cake 10'",
+        "price": "31.00",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "name": "6' Cookie Cake",
+        "price": "17.75",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "Cookie Ice Cream Cake",
+        "price": "44.50",
+        "description": ""
+      }
+    ]
+  }
