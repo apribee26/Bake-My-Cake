@@ -10,17 +10,17 @@
         "id": 2,
         "name": "Rudolph's Favorite",
         "price": "2.95",
-        "description": "This red cookie will certainly be the first to catch your eye. Red velvet dough with savory chocolatte chip. Do not mistake her density for merely surface-level indulgence."
+        "description": "This red cookie will certainly be the first to catch your eye. Red velvet dough with savory creamcheese chip. Do not mistake her density for merely surface-level indulgence."
       },
       {
         "id": 3,
-        "name": "Chocolate Mint",
+        "name": "Chocolate Mint Cookie",
         "price": "2.95",
         "description": "Our take on a favorite flavor combo. A warm dark chocolate cookie with mint chips and chunks of milk chocolate."
       },
       {
         "id": 4,
-        "title": "Ginger Delight",
+        "title": "Ginger Delight Cookie",
         "price": "2.95",
         "description": "Fall in love with our tender molasses cookie with sweet spices of cinnamon and nutmeg and complimenting flavor of the spicy ginger. Sprinkled with large granulated sugar to make them just as beautiful as they are delicious."
       },
@@ -46,7 +46,7 @@
         "id": 8,
         "title": "Vegan Confetti Cookie",
         "price": "2.95",
-        "description": "Sweet vanilla and all of the sprinkles make this an extra special vegan treat for an extra special day. For full information, click on Nutritional info below."
+        "description": "Sweet vanilla and all of the sprinkles make this an extra special vegan treat for an extra special day."
       }
 
     ]
