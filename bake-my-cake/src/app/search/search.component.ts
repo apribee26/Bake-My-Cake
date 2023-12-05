@@ -8,17 +8,17 @@ import { Gift, Dessert } from '../models/desserts';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  desserts = Desserts;
-  dessert?: Dessert;
 
+  gifts:Gift[] = Gifts;
+  gift?: Gift={};
   searchText: string = '';
 
-  searchDessert() {
+  searchGift() {
     if (this.searchText === '' || !this.searchText)
-    this.desserts = Desserts;
+    this.gifts = Gifts;
   else {
-    this.desserts = Desserts;
-    this.desserts = this.desserts.filter(dessert => dessert.name?.startsWith(this.searchText.toLowerCase()));
+    this.gifts = Gifts;
+    this.gifts = this.gifts.filter(gift => gift.name?.startsWith(this.searchText.toLowerCase()));
      }
    }
 }

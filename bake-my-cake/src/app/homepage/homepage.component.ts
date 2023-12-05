@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { Gifts, Desserts } from '../models/desserts';
+import { Gifts,Desserts } from '../models/desserts';
 import { Gift, Dessert } from '../models/desserts';
-
+import { Cookies,Cookie } from '../models/cookies';
+import { Brownies,Brownie } from '../models/brownies';
+import { Cakes,Cake } from '../models/cakes';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -11,27 +13,27 @@ export class HomepageComponent {
   gifts:Gift[] = Gifts;
   gift?: Gift={};
 
+  cookies:Cookie[] = Cookies;
+  cookie?: Cookie={};
+
+  brownies:Brownie[] = Brownies;
+  brownie?: Cookie={};
+
+  cakes:Cake[] = Cakes;
+  cake?: Cake={};
 
   desserts = Desserts;
   dessert?: Dessert;
 
   // dessert?: Dessert;
-  searchText: string = '';
+  
+  allGifts: string = "Gifts";
   allCookies: string = "Cookies";
   allBrownies:string = "Brownies";
   allCakes: string = "Cakes";
-  allGifts: string = "Gifts";
+ 
   
   ngOnInit(): void {
   }
-
-  searchDessert() {
-    if (this.searchText === '' || !this.searchText)
-    this.desserts = Desserts;
-  else {
-    this.desserts = Desserts;
-    this.desserts = this.desserts.filter(dessert => dessert.name?.startsWith(this.searchText.toLowerCase()));
-     }
-   }
 }
 

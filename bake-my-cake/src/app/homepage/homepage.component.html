@@ -39,34 +39,81 @@
                     </mat-card-actions>
                 </mat-card>
             <!-- </a> -->
-        <!-- <mat-card mat-ripple [matRippleCentered]="true" class="mat-card-content">
-            <img src="../assets/images/{{gift?.imageURL}}.jpg" alt="" width="280px" height="250px">
-            <mat-card-content>
-                <h4>{{gift?.name}}</h4>
-                <span>${{gift?.price}}</span>
-                <br>
-                <span>{{gift?.description}}</span>
-            </mat-card-content>
-            <mat-card-actions>
-                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
-            </mat-card-actions>
-        </mat-card> -->
             </div>
         </div>
-
+        <!-- Cookies -->
     <div>
         <h1 class="dessheader">{{allCookies}}</h1>
+        <div class="container">
+            <div *ngFor="let cookie of cookies" class="card">
+                <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+                    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+                        <img src="../assets/images/{{cookies}}.jpg" alt="" width="280px" height="250px">
+                        <mat-card-content>
+                            <h4>{{cookie?.name}}</h4>
+                            <span>${{cookie?.price}}</span>
+                            <br>
+                            <span>{{cookie?.description}}</span>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                            <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                <!-- </a> -->
+                </div>
+            </div>
     </div>
+
+    <!-- Brownies -->
+    <div>
+        <h1 class="dessheader">{{allBrownies}}</h1>
+        <div class="container">
+            <div *ngFor="let brownie of brownies" class="card">
+                <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+                    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+                        <img src="../assets/images/{{brownie}}.jpg" alt="" width="280px" height="250px">
+                        <mat-card-content>
+                            <h4>{{brownie?.name}}</h4>
+                            <span>${{brownie?.price}}</span>
+                            <br>
+                            <span>{{brownie?.description}}</span>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                            <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                <!-- </a> -->
+                </div>
+            </div>
+    </div>
+<!-- Cakes -->
+<div>
+    <h1 class="dessheader">{{allCakes}}</h1>
+    <div class="container">
+        <div *ngFor="let cake of cakes" class="card">
+            <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+                <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+                    <img src="../assets/images/{{cake}}.jpg" alt="" width="280px" height="250px">
+                    <mat-card-content>
+                        <h4>{{cake?.name}}</h4>
+                        <span>${{cake?.price}}</span>
+                        <br>
+                        <span>{{cake?.description}}</span>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                    </mat-card-actions>
+                </mat-card>
+            <!-- </a> -->
+            </div>
+        </div>
+</div>
+
 </section>
 
-   
-    <!-- <h1 class="dessheader">{{allBrownies}}</h1>
-    <h1 class="dessheader">{{allCakes}}</h1> -->
-<!-- Cookies -->
 
 
-<!-- Brownies -->
-
-
-<!-- Cakes -->
+ 
