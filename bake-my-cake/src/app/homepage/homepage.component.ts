@@ -35,5 +35,13 @@ export class HomepageComponent {
   
   ngOnInit(): void {
   }
+
+  // modify 
+  onSearchTextChanged(searchText: string) {
+    this.gifts = Gifts;
+if(searchText !== "")
+    this.gifts = Gifts;
+    this.gifts = this.gifts.filter(gift => gift.name?.startsWith(searchText));
+  }
 }
 
