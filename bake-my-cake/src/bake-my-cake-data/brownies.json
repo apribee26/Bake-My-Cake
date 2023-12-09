@@ -4,6 +4,7 @@
         "id": 1,
         "name": "Merry Brownie",
         "price": "4.95",
+        "imageURL":"../../assets/images/14holidaybrownie.jpg",
         "description": "This super chocolaty brownie (made with black cocoa) is packed with sprinkles and crushed candy canes."
       },
       {

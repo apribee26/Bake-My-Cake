@@ -11,7 +11,7 @@
 </section>
 
 <!-- Search -->
-<app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+<!-- <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search> -->
 
 <!-- Dashboard -->
 <section>
@@ -20,8 +20,8 @@
     </div>
 </section>
 
-<section>
-        <h1 class="dessheader">{{allGifts}}</h1>
+
+        <h1>{{allGifts}}</h1>
         <div class="container">
         <div *ngFor="let gift of gifts" class="card">
             <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
@@ -41,14 +41,16 @@
             <!-- </a> -->
             </div>
         </div>
+       
         <!-- Cookies -->
     <div>
-        <h1 class="dessheader">{{allCookies}}</h1>
         <div class="container">
+        <h1 class="dessheader">{{allCookies}}</h1>
+        <!-- <div class="container"> -->
             <div *ngFor="let cookie of cookies" class="card">
                 <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                     <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                        <img src="../assets/images/{{cookies}}.jpg" alt="" width="280px" height="250px">
+                        <img src="../assets/images/{{cookie?.imageURL}}.jpg" alt="" width="280px" height="250px">
                         <mat-card-content>
                             <h4>{{cookie?.name}}</h4>
                             <span>${{cookie?.price}}</span>
@@ -63,8 +65,11 @@
                 <!-- </a> -->
                 </div>
             </div>
-    </div>
+            </div>
+    
 
+   
+    
     <!-- Brownies -->
     <div>
         <h1 class="dessheader">{{allBrownies}}</h1>
@@ -72,7 +77,7 @@
             <div *ngFor="let brownie of brownies" class="card">
                 <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                     <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                        <img src="../assets/images/{{brownie}}.jpg" alt="" width="280px" height="250px">
+                        <img src="../assets/images/{{brownie?.imageURL}}.jpg" alt="" width="280px" height="250px">
                         <mat-card-content>
                             <h4>{{brownie?.name}}</h4>
                             <span>${{brownie?.price}}</span>
@@ -95,7 +100,7 @@
         <div *ngFor="let cake of cakes" class="card">
             <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                    <img src="../assets/images/{{cake}}.jpg" alt="" width="280px" height="250px">
+                    <img src="../../assets/images/15cookiemonbrownie.jpg" alt="" width="280px" height="250px">
                     <mat-card-content>
                         <h4>{{cake?.name}}</h4>
                         <span>${{cake?.price}}</span>
@@ -112,10 +117,27 @@
         </div>
 </div>
 
-</section>
+
 
 <footer></footer>
 
 
-
- 
+<!-- <img src="../../assets/images/2fourcookies.jpg" alt="">
+<img src="../../assets/images/3eightcookies.jpg" alt="">
+<img src="../../assets/images/4cookiesandBrowniesjpg.jpg" alt="">
+<img src="../../assets/images/6cookiemonstercookie.jpg" alt="">
+<img src="../../assets/images/7rudolph.jpg" alt="">
+<img src="../../assets/images/8chocolatemint.jpg" alt="">
+<img src="../../assets/images/9gingermolassescookie.jpg" alt="">
+<img src="../../assets/images/10peanutbuttercookie.jpg" alt="">
+<img src="../../assets/images/11oatmealnrasincookie.jpg" alt="">
+<img src="../../assets/images/10peanutbuttercookie.jpg" alt="">
+<img src="../../assets/images/11oatmealnrasincookie.jpg" alt="">
+<img src="../../assets/images/12veganchocolatechip.jpg" alt="">
+<img src="../../assets/images/13veganconfetti.jpg" alt="">
+<img src="../../assets/images/14holidaybrownie.jpg" alt="">
+<img src="../../assets/images/15cookiemonbrownie.jpg" alt="">
+<img src="../../assets/images/17matchabrownie.jpg" alt="">
+<img src="../../assets/images/18smoorescookieCake.jpg" alt="">
+<img src="../../assets/images/19chocolatechipcookiecake.jpg" alt="">
+<img src="../../assets/images/20cookiemonstercake.jpg" alt=""> -->

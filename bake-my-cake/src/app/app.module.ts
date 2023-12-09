@@ -23,11 +23,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { SearchComponent } from './search/search.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavigationPannelComponent } from './navigation-pannel/navigation-pannel.component';
 import { OperatingViewComponent } from './operating-view/operating-view.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 
 
@@ -36,11 +37,11 @@ import { OperatingViewComponent } from './operating-view/operating-view.componen
     AppComponent,
     SearchComponent,
     HomepageComponent,
-    FooterComponent,
     AboutUsComponent,
     NotFoundComponent,
     NavigationPannelComponent,
     OperatingViewComponent,
+    ShoppingCartComponent,
    
   ],
   imports: [
