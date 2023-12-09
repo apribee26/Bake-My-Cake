@@ -27,8 +27,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavigationPannelComponent } from './navigation-pannel/navigation-pannel.component';
-import { OperatingViewComponent } from './operating-view/operating-view.component';
+
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { GiftDetailComponent } from './landing-view/gift-detail/gift-detail.component';
+import { CookieDetailComponent } from './landing-view/cookie-detail/cookie-detail.component';
+import { BrownieDetailComponent } from './landing-view/brownie-detail/brownie-detail.component';
+import { CakeDetailComponent } from './landing-view/cake-detail/cake-detail.component';
 
 
 
@@ -40,8 +44,12 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     AboutUsComponent,
     NotFoundComponent,
     NavigationPannelComponent,
-    OperatingViewComponent,
+
     ShoppingCartComponent,
+     GiftDetailComponent,
+     CookieDetailComponent,
+     BrownieDetailComponent,
+     CakeDetailComponent,
    
   ],
   imports: [
