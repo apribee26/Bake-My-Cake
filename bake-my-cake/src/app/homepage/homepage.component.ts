@@ -37,25 +37,25 @@ export class HomepageComponent {
         console.log('Gifts', data);
         this.gifts = data;
       }
-    });
+    })
     this.cookiesService.getCookies().subscribe({
       next: (data) => {
         console.log('Cookies', data);
         this.cookies = data;
       }
-    });
+    })
     this.browniesService.getBrownies().subscribe({
       next: (data) => {
         console.log('Brownies', data);
         this.gifts = data;
       }
-    });
+    })
     this.cakesService.getCakes().subscribe({
       next: (data) => {
         console.log('Cakes', data);
         this.cakes = data;
       }
-    });
+    })
   }
 
 }

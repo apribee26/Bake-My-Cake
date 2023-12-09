@@ -24,7 +24,7 @@
         <h1 class="dessheader">{{allGifts}}</h1>
         <div class="container">
         <div *ngFor="let gift of gifts" class="card">
-            <a routerLink="../landing-view/gift-detail/{{gift?.id}}">
+            <!-- <a routerLink="../landing-view/gift-detail/{{gift?.id}}"> -->
                 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
                     <img src="../../assets/images/{{gift?.imageURL}}" alt="gifts" width="280px" height="250px">
                     <mat-card-content>
@@ -38,17 +38,18 @@
                         <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
                     </mat-card-actions>
                 </mat-card>
-            </a>
+            <!-- </a> -->
             </div>
         </div>
        
         <!-- Cookies -->
+        
         <h1 class="dessheader">{{allCookies}}</h1>
         <div class="container">
             <div *ngFor="let cookie of cookies" class="card">
-                <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+                <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}">
                     <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                        <img src="../assets/images/{{cookie?.imageURL}}.jpg" alt="" width="280px" height="250px">
+                        <img src="../../assets/images/{{cookie?.imageURL}}" alt="" width="280px" height="250px">
                         <mat-card-content>
                             <h4>{{cookie?.name}}</h4>
                             <span>${{cookie?.price}}</span>
@@ -60,7 +61,7 @@
                             <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
                         </mat-card-actions>
                     </mat-card>
-                <!-- </a> -->
+                </a>
                 </div>
             </div>
            
@@ -94,7 +95,7 @@
         <div *ngFor="let cake of cakes" class="card">
             <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                    <img src="../../assets/images/15cookiemonbrownie.jpg" alt="" width="280px" height="250px">
+                    <img src="../../assets/images/{{cake?.imageURL}}" alt="" width="280px" height="250px">
                     <mat-card-content>
                         <h4>{{cake?.name}}</h4>
                         <span>${{cake?.price}}</span>
