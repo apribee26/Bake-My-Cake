@@ -47,7 +47,7 @@ export class HomepageComponent {
     this.browniesService.getBrownies().subscribe({
       next: (data) => {
         console.log('Brownies', data);
-        this.gifts = data;
+        this.brownies = data;
       }
     })
     this.cakesService.getCakes().subscribe({
@@ -57,7 +57,6 @@ export class HomepageComponent {
       }
     })
   }
-
 }
   // modify
 //   onSearchTextChanged(searchText: string) {

@@ -1,16 +1,17 @@
 /* Header */
 #header {
     display: flex;
-    /* align-items: center; */
     text-align: center;
     justify-content: space-between;
     background-color: rgb(236, 213, 185);
     color: black;
+    margin-top: -20px;
 }
 
 #icons>* {
     margin-right: 15px;
 }
+
 
 a:link {
     color: black;
@@ -28,35 +29,31 @@ a {
 /* Dashboard Headers */
 .dessheader {
     font-size: 22px;
-    margin-left: 100px;
-   
+    margin-left: 10px;  
+    
 }
 
 /* Dashboard Content */
-.gifts {
-    margin-top: 6px;
-}
 
 /* Dashboard Cards */
+
 .card {
     width: 16rem;
-    
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     float: left; 
    
 }
 
 .container {
-   height: 600px;
-   
-}
-
+   height: 42rem;
+margin-right: 30px;
+  margin-left: 90px;
+} 
 
 .card-content{
-    height: 520px;
+    height: 500px;
     
-}
-
+} 
 

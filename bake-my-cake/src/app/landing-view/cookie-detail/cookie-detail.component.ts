@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Cookie } from 'src/app/models/cookies';
 import { CookiesService } from 'src/app/services/cookies.service';
 import { RouteService } from 'src/app/services/route.service';
+
 @Component({
   selector: 'app-cookie-detail',
   templateUrl: './cookie-detail.component.html',

@@ -1,32 +1,32 @@
-<!-- Header -->
-<section>
+<!-- Header -->]
+
     <mat-toolbar id="header">
         <h2>Sid's</h2>
         <div id=icons>
-            <a href="http://localhost:4200/"><mat-icon>home</mat-icon></a>
+            <a routerLink="../home"><mat-icon>home</mat-icon></a>
             <a href=""><mat-icon>apps</mat-icon></a>
             <a href=""><mat-icon>settings</mat-icon></a>
         </div>
     </mat-toolbar>
-</section>
+
 
 <!-- Search -->
 <!-- <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search> -->
 
 <!-- Dashboard -->
-<section>
+
     <div>
         <img src="../../assets/images/1sid.png" class="sid1">
     </div>
-</section>
 
 <!-- Gifts -->
-        <h1 class="dessheader">{{allGifts}}</h1>
-        <div class="container">
+        
+        <div class="container" >
+            <h1 class="dessheader">{{allGifts}}</h1>
         <div *ngFor="let gift of gifts" class="card">
             <!-- <a routerLink="../landing-view/gift-detail/{{gift?.id}}"> -->
                 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                    <img src="../../assets/images/{{gift?.imageURL}}" alt="gifts" width="280px" height="250px">
+                    <img src="../../assets/images/{{gift?.imageURL}}" alt="" width="280px" height="250px">
                     <mat-card-content>
                         <h4>{{gift?.name}}</h4>
                         <span>${{gift?.price}}</span>
@@ -43,10 +43,9 @@
         </div>
        
         <!-- Cookies -->
-        
-        <h1 class="dessheader">{{allCookies}}</h1>
-     
+
         <div class="container">
+            <h1 class="dessheader">{{allCookies}}</h1>
             <div *ngFor="let cookie of cookies" class="card">
                 <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}">
                     <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
@@ -64,15 +63,13 @@
                     </mat-card>
                 </a>
                 </div>
-        
             </div>
         
-           
-    
     <!-- Brownies -->
  
-        <h1 class="dessheader">{{allBrownies}}</h1>
+       
         <div class="container">
+            <h1 class="dessheader">{{allBrownies}}</h1>
             <div *ngFor="let brownie of brownies" class="card">
                 <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                     <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
@@ -93,8 +90,9 @@
             </div>
 <!-- Cakes -->
 
-    <h1 class="dessheader">{{allCakes}}</h1>
+   
     <div class="container">
+        <h1 class="dessheader">{{allCakes}}</h1>
         <div *ngFor="let cake of cakes" class="card">
             <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
@@ -116,7 +114,7 @@
 
 
 
-<footer></footer>
+<footer><h1>hey</h1></footer>
 
 
 <!-- <img src="../../assets/images/2fourcookies.jpg" alt="">
@@ -127,14 +125,6 @@
 <img src="../../assets/images/8chocolatemint.jpg" alt="">
 <img src="../../assets/images/9gingermolassescookie.jpg" alt="">
 <img src="../../assets/images/10peanutbuttercookie.jpg" alt="">
-<img src="../../assets/images/11oatmealnrasincookie.jpg" alt="">
+<img src="../../assets/images/11oatmealnrasincookie.jpg" alt=""> -->
 
 
-<img src="../../assets/images/12veganchocolatechip.jpg" alt="">
-<img src="../../assets/images/13veganconfetti.jpg" alt="">
-<img src="../../assets/images/14holidaybrownie.jpg" alt="">
-<img src="../../assets/images/15cookiemonbrownie.jpg" alt="">
-<img src="../../assets/images/17matchabrownie.jpg" alt="">
-<img src="../../assets/images/18smoorescookieCake.jpg" alt="">
-<img src="../../assets/images/19chocolatechipcookiecake.jpg" alt="">
-<img src="../../assets/images/20cookiemonstercake.jpg" alt=""> -->

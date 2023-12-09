@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Merry/Happpy 4-pack",
         "price": "9.50",
-        "imageUrl":"../../assets/images/2fourcookies.jpg",
+        "imageURL":"../../assets/images/2fourcookies.jpg",
         "description": "Six warm,cookies pre-wrapped in a Merry/Happy box sleeve and delivered to your friends and family"
        
       },
@@ -12,21 +12,21 @@
         "id": 2,
         "name": "Naughty/Nice 8-pack",
         "price": "17.50",
-        "imageUrl":"../../assets/images/3eightcookies.jpg",
+        "imageURL":"../../assets/images/3eightcookies.jpg",
         "description": "Which list are they on? Give a box of twelve cookies wrapped in our cheeky Naughty/Nice box sleeve."
       },
       {
         "id": 3,
         "name": "Sids Present 12-pack",
         "price": "31.00",
-        "imageUrl":"../../assets/images/4cookiesandBrowniesjpg.jpg",
+        "imageURL":"../../assets/images/4cookiesandBrowniesjpg.jpg",
         "description": "Twelve warm, brownies or cookies of your choosing with a gift wrap and tag box sleeve. Easy peasy!"
       },
       {
         "id": 4,
         "title": "Give Cookies 10' Cake",
         "price": "32.00",
-        "imageUrl":"../../assets/images/4cookiesandBrowniesjpg.jpg", 
+        "imageURL":"../../assets/images/4cookiesandBrowniesjpg.jpg", 
         "description": "The gift that keeps on giving. One Classic flavor, your choice of decorative icing, and an optional message applied with buttercream icing and wrapped with a holiday message. Up to 8 servings."
       }
 

@@ -1,13 +1,25 @@
 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-    <img src="../../assets/images/{{cookie?.imageURL}}" alt="" width="280px" height="250px">
+    <img src="../..//../assets/images/{{cookie.imageURL}}" alt="" width="280px" height="250px">
     <mat-card-content>
-        <h4>{{cookie?.name}}</h4>
-        <span>${{cookie?.price}}</span>
-        <br>
-        <span>{{cookie?.description}}</span>
+        <h4>{{cookie.name}}</h4>
+        ${{cookie.price}}
+        <form id="edit-form">
+            <!-- <mat-form-field class="input-field" >
+                <mat-label>Price ($)</mat-label>
+                <input matInput [(ngModel)]="fruit.price" name="price" type="text" >
+            </mat-form-field>
+            <mat-form-field class="input-field">
+                <mat-label>Per Pound / Piece</mat-label>
+                <input matInput [(ngModel)]="fruit.unit" name="unit" type="text" >
+            </mat-form-field> -->
+        </form>
     </mat-card-content>
     <mat-card-actions>
-        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+        <!-- <button color="accent" mat-icon-button (click)="editFruit()">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button color="accent" mat-icon-button>
+            <mat-icon>delete</mat-icon>
+        </button> -->
     </mat-card-actions>
 </mat-card>
