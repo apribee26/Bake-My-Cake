@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-
-import { Gift} from '../models/desserts';
+import { Gift } from '../models/desserts';
 import { Cookie } from '../models/cookies';
 import { Brownie } from '../models/brownies';
 import { Cake } from '../models/cakes';
-import { DessertsService } from '../services/desserts.service';
+import { GiftsService } from '../services/gifts.service';
+import { CookiesService } from '../services/cookies.service';
+import { BrowniesService } from '../services/brownies.service';
+import { CakesService } from '../services/cakes.service';
 
 @Component({
   selector: 'app-homepage',
@@ -12,40 +14,52 @@ import { DessertsService } from '../services/desserts.service';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
-  constructor(private dessertService:DessertsService){}
-  gifts:Gift[]=[];
-  // gift?: Gift[]={};
-
-  // cookies:Cookie[] = Cookies;
-  cookies:Cookie[]=[];
-  // cookie?: Cookie={};
-
-  // brownies:Brownie[] = Brownies;
-  brownies:Brownie[]=[];
-  // brownie?: Brownie={};
-
-  // cakes:Cake[] = Cakes;
-  cakes:Cake[]=[];
-  // cake?: Cake={};
+  constructor(private giftsService: GiftsService,
+    private cookiesService: CookiesService,
+    private browniesService: BrowniesService,
+    private cakesService: CakesService) { }
 
 
-  // desserts = Desserts;
-  // dessert?: Dessert;
+  gifts: Gift[] = [];
+  cookies: Cookie[] = [];
+  brownies: Brownie[] = [];
+  cakes: Cake[] = [];
 
-  // dessert?: Dessert;
-  
   allGifts: string = "Gifts";
   allCookies: string = "Cookies";
-  allBrownies:string = "Brownies";
+  allBrownies: string = "Brownies";
   allCakes: string = "Cakes";
- 
-  
+
+
   ngOnInit(): void {
+    this.giftsService.getGifts().subscribe({
+      next: (data) => {
+        console.log('Gifts', data);
+        this.gifts = data;
+      }
+    });
+    this.cookiesService.getCookies().subscribe({
+      next: (data) => {
+        console.log('Cookies', data);
+        this.cookies = data;
+      }
+    });
+    this.browniesService.getBrownies().subscribe({
+      next: (data) => {
+        console.log('Brownies', data);
+        this.gifts = data;
+      }
+    });
+    this.cakesService.getCakes().subscribe({
+      next: (data) => {
+        console.log('Cakes', data);
+        this.cakes = data;
+      }
+    });
   }
 
-  
 }
-  // modify 
+  // modify
 //   onSearchTextChanged(searchText: string) {
 //     this.gift = Gift;
 // if(searchText !== "")

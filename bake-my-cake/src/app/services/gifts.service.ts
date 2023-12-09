@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class DessertsService {
+export class GiftsService {
 
   URL: string = "http://localhost:3000/gifts";
   constructor(private http: HttpClient) { }
@@ -17,6 +17,4 @@ export class DessertsService {
   getGift(id?: number) : Observable<Gift> {
     return this.http.get<Gift>(`${this.URL}/${id}`);
   }
-
 }
-

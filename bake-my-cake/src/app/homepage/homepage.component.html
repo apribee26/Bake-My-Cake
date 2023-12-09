@@ -20,11 +20,11 @@
     </div>
 </section>
 
-
-        <h1>{{allGifts}}</h1>
+<!-- Gifts -->
+        <h1 class="dessheader">{{allGifts}}</h1>
         <div class="container">
         <div *ngFor="let gift of gifts" class="card">
-            <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+            <a routerLink="../landing-view/gift-detail/{{gift?.id}}">
                 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
                     <img src="../assets/images/{{gift?.imageURL}}.jpg" alt="" width="280px" height="250px">
                     <mat-card-content>
@@ -38,7 +38,7 @@
                         <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
                     </mat-card-actions>
                 </mat-card>
-            <!-- </a> -->
+            </a>
             </div>
         </div>
        
@@ -66,9 +66,6 @@
                 </div>
             </div>
             </div>
-    
-
-   
     
     <!-- Brownies -->
     <div>
