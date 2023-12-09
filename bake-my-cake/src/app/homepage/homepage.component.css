@@ -3,13 +3,19 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    background-color: rgb(236, 213, 185);
+    background-color: green;
     color: black;
     margin-top: -20px;
 }
 
+.bizName {
+    color: white;
+    margin-left: 20px;
+}
+
 #icons>* {
     margin-right: 15px;
+    color: white;
 }
 
 
@@ -21,6 +27,7 @@ a:link {
 a {
     color: black;
 }
+
 /* Dashboard */
 .sid1 {
     margin-left: 970px;
@@ -29,31 +36,28 @@ a {
 /* Dashboard Headers */
 .dessheader {
     font-size: 22px;
-    margin-left: 10px;  
-    
+   /* margin-top: 150px; */
+   margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* Dashboard Content */
-
 /* Dashboard Cards */
 
 .card {
     width: 16rem;
     margin-left: 60px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    float: left; 
-   
+    margin-bottom: 30px;
+    float: left;
+
 }
 
 .container {
-   height: 42rem;
-margin-right: 30px;
-  margin-left: 90px;
+    height: 50rem;
+   margin-left: 150px;
+   
 } 
-
-.card-content{
-    height: 500px;
+ .card-content {
+    height: 490px;
     
-} 
-
+}

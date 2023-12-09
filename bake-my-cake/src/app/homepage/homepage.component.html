@@ -1,15 +1,14 @@
 <!-- Header -->]
 
+<section>
     <mat-toolbar id="header">
-        <h2>Sid's</h2>
+        <h2 class="bizName">Sid's</h2>
         <div id=icons>
             <a routerLink="../home"><mat-icon>home</mat-icon></a>
-            <a href=""><mat-icon>apps</mat-icon></a>
-            <a href=""><mat-icon>settings</mat-icon></a>
+            <a href=""><mat-icon color="warn">favorite</mat-icon></a>
+            <a href=""><mat-icon>shopping_cart</mat-icon></a>
         </div>
     </mat-toolbar>
-
-
 <!-- Search -->
 <!-- <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search> -->
 
@@ -19,7 +18,7 @@
         <img src="../../assets/images/1sid.png" class="sid1">
     </div>
 
-<!-- Gifts -->
+    <!-- Gifts -->
         
         <div class="container" >
             <h1 class="dessheader">{{allGifts}}</h1>
@@ -73,7 +72,7 @@
             <div *ngFor="let brownie of brownies" class="card">
                 <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
                     <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                        <img src="../assets/images/{{brownie?.imageURL}}.jpg" alt="" width="280px" height="250px">
+                        <img src="../../assets/images/{{brownie?.imageURL}}"alt="" width="280px" height="250px">
                         <mat-card-content>
                             <h4>{{brownie?.name}}</h4>
                             <span>${{brownie?.price}}</span>
@@ -114,7 +113,7 @@
 
 
 
-<footer><h1>hey</h1></footer>
+<footer></footer>
 
 
 <!-- <img src="../../assets/images/2fourcookies.jpg" alt="">

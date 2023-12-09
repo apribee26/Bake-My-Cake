@@ -30,8 +30,8 @@ export class HomepageComponent {
   allBrownies: string = "Brownies";
   allCakes: string = "Cakes";
 
-
   ngOnInit(): void {
+
     this.giftsService.getGifts().subscribe({
       next: (data) => {
         console.log('Gifts', data);
