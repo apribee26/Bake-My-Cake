@@ -1,1 +1,13 @@
-<p>gift-detail works!</p>
+<mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+    <img src="../../assets/images/{{gift.imageURL}}" alt="gifts" width="280px" height="250px">
+    <mat-card-content>
+        <h4>{{gift.name}}</h4>
+        <span>${{gift.price}}</span>
+        <br>
+        <span>{{gift.description}}</span>
+    </mat-card-content>
+    <mat-card-actions>
+        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+    </mat-card-actions>
+</mat-card>

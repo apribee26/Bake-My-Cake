@@ -1,1 +1,13 @@
-<p>cookie-detail works!</p>
+<mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+    <img src="../../assets/images/{{cookie?.imageURL}}" alt="" width="280px" height="250px">
+    <mat-card-content>
+        <h4>{{cookie?.name}}</h4>
+        <span>${{cookie?.price}}</span>
+        <br>
+        <span>{{cookie?.description}}</span>
+    </mat-card-content>
+    <mat-card-actions>
+        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+    </mat-card-actions>
+</mat-card>
