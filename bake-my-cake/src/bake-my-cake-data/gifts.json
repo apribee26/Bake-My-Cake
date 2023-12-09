@@ -4,16 +4,16 @@
         "id": 1,
         "name": "Merry/Happpy 4-pack",
         "price": "9.50",
-        "imageUrl":"../../assets/images/4cookiesandBrowniesjpg.jpg",
+        "imageUrl":"../../assets/images/2fourcookies.jpg",
         "description": "Six warm,cookies pre-wrapped in a Merry/Happy box sleeve and delivered to your friends and family"
        
       },
       {
         "id": 2,
         "name": "Naughty/Nice 8-pack",
-        "price": "",
-        "imageUrl":"../../assets/images/4cookiesandBrowniesjpg.jpg",
-        "description": ""
+        "price": "17.50",
+        "imageUrl":"../../assets/images/3eightcookies.jpg",
+        "description": "Which list are they on? Give a box of twelve cookies wrapped in our cheeky Naughty/Nice box sleeve."
       },
       {
         "id": 3,

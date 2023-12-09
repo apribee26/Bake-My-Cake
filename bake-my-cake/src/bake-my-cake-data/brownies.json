@@ -11,18 +11,21 @@
         "id": 2,
         "name": "Cookie Monster Brownie",
         "price": "4.95",
+        "imageURL":"../../assets/images/15cookiemonbrownie.jpg",
         "description": "Oreo cookies, fudgy brownies, chunks of chocolate chip cookie, and cookies and cream frosting are truly and impressive combination."
       },
       {
         "id": 3,
         "name": "Vegan Chocolate Brownie",
         "price": "4.95",
+        "imageURL":"../../assets/images/16veganchocolatebrownie.jpg",
         "description": "Our vegan take on the “classic brownie” has a sweet, rich chocolaty taste and satisfying chewy texture, all without eggs or butter."
       },
       {
         "id": 4,
         "title": "Matcha Brownie",
         "price": "4.95",
+        "imageURL":"../../assets/images/17matchabrownie.jpg",
         "description": "You will these enjoy moist, rich, dense treats, full of intense matcha flavor."
       }
     ]

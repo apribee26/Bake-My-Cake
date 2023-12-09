@@ -11,14 +11,14 @@
         "id": 2,
         "name": "6` Cookie Cake",
         "price": "17.75",
-        "imageURL":"",
+        "imageURL":"../../assets/images/19chocolatechipcookiecake.jpg",
         "description": "We've taken your favorite Deluxe cookie flavor and turned it into a delicious 6.Serves up to 4."
       },
       {
         "id": 3,
         "name": "Sid`s Ice Cream Cookie-Cake",
         "price": "44.50",
-        "imageURL":"",
+        "imageURL":"../../assets/images/20cookiemonstercake.jpg",
         "description": "Seriously. It’s like a cloud of Devil’s Food Cake rained down Cookies into a sea of ice cream. Okay, it’s not exactly like that, but it’s close.Serves 12."
       }
     ]
