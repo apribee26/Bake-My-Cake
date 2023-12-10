@@ -1,21 +1,40 @@
+/* Sale Widget */
+#widget1{
+    display: flex;
+    height: 30px;
+    font-size: 13px;
+   
+    background-color: rgb(4, 146, 4);
+    color: black;
+
+}
+
+#widget2{
+    display: flex;
+    height: 25px;
+    font-size: 15px;
+   
+    color: black;
+
+}
 /* Header */
 #header {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    background-color: green;
+    background-color: white;
     color: black;
     margin-top: -20px;
 }
 
 .bizName {
-    color: white;
+    color: black;
     margin-left: 20px;
 }
 
 #icons>* {
     margin-right: 15px;
-    color: white;
+    color: black;
 }
 
 
@@ -53,7 +72,7 @@ a {
 }
 
 .container {
-    height: 50rem;
+    height: 55rem;
    margin-left: 150px;
    
 } 
@@ -61,3 +80,17 @@ a {
     height: 490px;
     
 }
+
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+  }
+
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

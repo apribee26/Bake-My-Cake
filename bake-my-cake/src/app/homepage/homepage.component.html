@@ -1,6 +1,16 @@
-<!-- Header -->]
+<mat-toolbar id="widget1">
+    <span style="margin: auto;">SANTA CAME HERE EARLY,HOLIDAY FLAVORS ARE HERE</span>
+</mat-toolbar>
 
-<section>
+<div>
+    <mat-toolbar id="widget2">
+        <span style="margin-left: 25%;">HOLIDAY: GET $10 OFF WHEN YOU SPEND $50+</span>
+        <mat-progress-bar style="width: 400px; margin-left: 30px;" mode="determinate" value="40"></mat-progress-bar>
+    </mat-toolbar>
+</div>
+
+<!-- Header -->]
+<div>
     <mat-toolbar id="header">
         <h2 class="bizName">Sid's</h2>
         <div id=icons>
@@ -9,111 +19,114 @@
             <a href=""><mat-icon>shopping_cart</mat-icon></a>
         </div>
     </mat-toolbar>
+</div>
+
 <!-- Search -->
 <!-- <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search> -->
 
 <!-- Dashboard -->
+<div>
+    <img src="../../assets/images/1sid.png" class="sid1">
+</div>
 
-    <div>
-        <img src="../../assets/images/1sid.png" class="sid1">
+<!-- Gifts -->
+
+<div class="container">
+    <h1 class="dessheader">{{allGifts}}</h1>
+    <div *ngFor="let gift of gifts" class="card">
+        <!-- <a routerLink="../landing-view/gift-detail/{{gift?.id}}"> -->
+        <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+            <img src="../../assets/images/{{gift?.imageURL}}" alt="" width="280px" height="250px">
+            <mat-card-content>
+                <h4>{{gift?.name}}</h4>
+                <span>${{gift?.price}}</span>
+                <br>
+                <span>{{gift?.description}}</span>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+            </mat-card-actions>
+        </mat-card>
+        <!-- </a> -->
     </div>
+</div>
 
-    <!-- Gifts -->
-        
-        <div class="container" >
-            <h1 class="dessheader">{{allGifts}}</h1>
-        <div *ngFor="let gift of gifts" class="card">
-            <!-- <a routerLink="../landing-view/gift-detail/{{gift?.id}}"> -->
-                <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                    <img src="../../assets/images/{{gift?.imageURL}}" alt="" width="280px" height="250px">
-                    <mat-card-content>
-                        <h4>{{gift?.name}}</h4>
-                        <span>${{gift?.price}}</span>
-                        <br>
-                        <span>{{gift?.description}}</span>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
-                    </mat-card-actions>
-                </mat-card>
-            <!-- </a> -->
-            </div>
-        </div>
-       
-        <!-- Cookies -->
+<!-- Cookies -->
 
-        <div class="container">
-            <h1 class="dessheader">{{allCookies}}</h1>
-            <div *ngFor="let cookie of cookies" class="card">
-                <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}">
-                    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                        <img src="../../assets/images/{{cookie?.imageURL}}" alt="" width="280px" height="250px">
-                        <mat-card-content>
-                            <h4>{{cookie?.name}}</h4>
-                            <span>${{cookie?.price}}</span>
-                            <br>
-                            <span>{{cookie?.description}}</span>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                            <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
-                        </mat-card-actions>
-                    </mat-card>
-                </a>
-                </div>
-            </div>
-        
-    <!-- Brownies -->
- 
-       
-        <div class="container">
-            <h1 class="dessheader">{{allBrownies}}</h1>
-            <div *ngFor="let brownie of brownies" class="card">
-                <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
-                    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                        <img src="../../assets/images/{{brownie?.imageURL}}"alt="" width="280px" height="250px">
-                        <mat-card-content>
-                            <h4>{{brownie?.name}}</h4>
-                            <span>${{brownie?.price}}</span>
-                            <br>
-                            <span>{{brownie?.description}}</span>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                            <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
-                        </mat-card-actions>
-                    </mat-card>
-                <!-- </a> -->
-                </div>
-            </div>
+<div class="container">
+    <h1 class="dessheader">{{allCookies}}</h1>
+    <div *ngFor="let cookie of cookies" class="card">
+        <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}">
+            <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+                <img src="../../assets/images/{{cookie?.imageURL}}" alt="" width="280px" height="250px">
+                <mat-card-content>
+                    <h4>{{cookie?.name}}</h4>
+                    <span>${{cookie?.price}}</span>
+                    <br>
+                    <span>{{cookie?.description}}</span>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                    <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                </mat-card-actions>
+            </mat-card>
+        </a>
+    </div>
+</div>
+
+<!-- Brownies -->
+
+
+<div class="container">
+    <h1 class="dessheader">{{allBrownies}}</h1>
+    <div *ngFor="let brownie of brownies" class="card">
+        <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+        <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+            <img src="../../assets/images/{{brownie?.imageURL}}" alt="" width="280px" height="250px">
+            <mat-card-content>
+                <h4>{{brownie?.name}}</h4>
+                <span>${{brownie?.price}}</span>
+                <br>
+                <span>{{brownie?.description}}</span>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+            </mat-card-actions>
+        </mat-card>
+        <!-- </a> -->
+    </div>
+</div>
 <!-- Cakes -->
 
-   
-    <div class="container">
-        <h1 class="dessheader">{{allCakes}}</h1>
-        <div *ngFor="let cake of cakes" class="card">
-            <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
-                <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                    <img src="../../assets/images/{{cake?.imageURL}}" alt="" width="280px" height="250px">
-                    <mat-card-content>
-                        <h4>{{cake?.name}}</h4>
-                        <span>${{cake?.price}}</span>
-                        <br>
-                        <span>{{cake?.description}}</span>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                        <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
-                    </mat-card-actions>
-                </mat-card>
-            <!-- </a> -->
-            </div>
-        </div>
+
+<div class="container">
+    <h1 class="dessheader">{{allCakes}}</h1>
+    <div *ngFor="let cake of cakes" class="card">
+        <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+        <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+            <img src="../../assets/images/{{cake?.imageURL}}" alt="" width="280px" height="250px">
+            <mat-card-content>
+                <h4>{{cake?.name}}</h4>
+                <span>${{cake?.price}}</span>
+                <br>
+                <span>{{cake?.description}}</span>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
+                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+            </mat-card-actions>
+        </mat-card>
+        <!-- </a> -->
+    </div>
+</div>
 
 
+<section>
+    <footer id="footer"></footer>
+</section>
 
-<footer></footer>
 
 
 <!-- <img src="../../assets/images/2fourcookies.jpg" alt="">
@@ -125,5 +138,3 @@
 <img src="../../assets/images/9gingermolassescookie.jpg" alt="">
 <img src="../../assets/images/10peanutbuttercookie.jpg" alt="">
 <img src="../../assets/images/11oatmealnrasincookie.jpg" alt=""> -->
-
-

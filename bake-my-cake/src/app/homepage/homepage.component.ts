@@ -7,11 +7,13 @@ import { GiftsService } from '../services/gifts.service';
 import { CookiesService } from '../services/cookies.service';
 import { BrowniesService } from '../services/brownies.service';
 import { CakesService } from '../services/cakes.service';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  styleUrls: ['./homepage.component.css'],
+
 })
 export class HomepageComponent {
   constructor(private giftsService: GiftsService,

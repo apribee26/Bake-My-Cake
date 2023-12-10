@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRippleModule } from '@angular/material/core';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -71,6 +72,7 @@ import { CakeDetailComponent } from './landing-view/cake-detail/cake-detail.comp
     MatListModule,
     MatSnackBarModule,
     MatSelectModule,
+    MatProgressBarModule,
     AppRoutingModule
   ],
   providers: [],
