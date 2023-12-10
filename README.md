@@ -1,10 +1,12 @@
 # Bake-My-Cake
 
-Simple overview of use/purpose.
+Bake My Cake is an online website that gives user's the means to access their sweet-tooth needs on an online bakery website.
 
 ## Description
 
 An in-depth paragraph about your project and overview of use.
+
+
 
 ## Getting Started
 
