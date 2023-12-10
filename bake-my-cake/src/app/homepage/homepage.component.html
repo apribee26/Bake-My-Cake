@@ -14,9 +14,13 @@
     <mat-toolbar id="header">
         <h2 class="bizName">Sid's</h2>
         <div id=icons>
+            <a href="" class="tab">SHOP</a>
+            <a href="" style="margin-right: 510px;" class="tab">RECIPE</a>
             <a routerLink="../home"><mat-icon>home</mat-icon></a>
             <a href=""><mat-icon color="warn">favorite</mat-icon></a>
             <a href=""><mat-icon>shopping_cart</mat-icon></a>
+            
+            <a href=""></a>
         </div>
     </mat-toolbar>
 </div>
@@ -36,22 +40,27 @@
     <div *ngFor="let gift of gifts" class="card">
         <!-- <a routerLink="../landing-view/gift-detail/{{gift?.id}}"> -->
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{gift?.imageURL}}" alt="" width="280px" height="250px">
+            <img src="../../assets/images/{{gift?.imageURL}}" alt="" class="imgcard" width="280px" height="250px">
             <mat-card-content>
                 <h4>{{gift?.name}}</h4>
                 <span>${{gift?.price}}</span>
-                <br>
-                <span>{{gift?.description}}</span>
+                <!-- <br>
+                <span>{{gift?.description}}</span> -->
             </mat-card-content>
             <mat-card-actions>
+                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
             </mat-card-actions>
         </mat-card>
         <!-- </a> -->
     </div>
 </div>
 
+<section>
+    <div id="widget3">
+        <h2>Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</h2>
+    </div>
+</section>
 <!-- Cookies -->
 
 <div class="container">
@@ -59,16 +68,16 @@
     <div *ngFor="let cookie of cookies" class="card">
         <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}">
             <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                <img src="../../assets/images/{{cookie?.imageURL}}" alt="" width="280px" height="250px">
+                <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
                 <mat-card-content>
                     <h4>{{cookie?.name}}</h4>
                     <span>${{cookie?.price}}</span>
-                    <br>
-                    <span>{{cookie?.description}}</span>
+                    <!-- <br>
+                    <span>{{cookie?.description}}</span> -->
                 </mat-card-content>
                 <mat-card-actions>
-                    <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                    <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
+                    <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
+                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
                 </mat-card-actions>
             </mat-card>
         </a>
@@ -83,16 +92,16 @@
     <div *ngFor="let brownie of brownies" class="card">
         <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{brownie?.imageURL}}" alt="" width="280px" height="250px">
+            <img src="../../assets/images/{{brownie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
             <mat-card-content>
                 <h4>{{brownie?.name}}</h4>
                 <span>${{brownie?.price}}</span>
-                <br>
-                <span>{{brownie?.description}}</span>
+                <!-- <br>
+                <span>{{brownie?.description}}</span> -->
             </mat-card-content>
             <mat-card-actions>
+                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
             </mat-card-actions>
         </mat-card>
         <!-- </a> -->
@@ -106,16 +115,16 @@
     <div *ngFor="let cake of cakes" class="card">
         <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{cake?.imageURL}}" alt="" width="280px" height="250px">
+            <img src="../../assets/images/{{cake?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
             <mat-card-content>
                 <h4>{{cake?.name}}</h4>
                 <span>${{cake?.price}}</span>
-                <br>
-                <span>{{cake?.description}}</span>
+                <!-- <br>
+                <span>{{cake?.description}}</span> -->
             </mat-card-content>
             <mat-card-actions>
+                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                <button color="accent" mat-icon-button><mat-icon>add</mat-icon></button>
             </mat-card-actions>
         </mat-card>
         <!-- </a> -->
@@ -124,17 +133,80 @@
 
 
 <section>
-    <footer id="footer"></footer>
+    <footer>
+        <div class="grid-layout">
+          <div class="sec">
+            <!-- Footer-links -->
+            <ul>
+              <li>
+                  <!-- Footer Header -->
+                  <h4 class="foott2">Follow Us</h4>
+                  <div class="social">
+                    <!-- social media links -->
+                    <ul>
+                      <li><a href="#"><i></i></a></li>
+                      <li><a href="#"><i></i></a></li>
+                      <li><a href="#"><i></i></a></li>
+                      <li><a href="#"><i></i></a></li>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+          </div>
+
+          <div class="sec">
+            <!-- Footer-links -->
+            <ul>
+              <li><strong>
+                  <!-- Footer Header -->
+                  <p class="foott2">Shop</p>
+                </strong></li>
+              <li><a href="#"><i aria-hidden="true"></i>All Flavors</a></li>
+              <li><a href="#"><i aria-hidden="true"></i>Gifts</a></li>
+              <li><a href="#"><i aria-hidden="true"></i>Wholesale</a></li>
+            </ul>
+          </div>
+
+
+          <div class="sec">
+            <!-- Footer-links -->
+            <ul>
+              <li><strong>
+                  <!-- Footer Header -->
+                  <p class="foott2">Information</p>
+                </strong></li>
+              <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
+              <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
+              <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
+            </ul>
+          </div>
+
+
+          <div class="sec">
+            <!-- Footer-links -->
+            <ul>
+              <li><strong>
+                  <!-- Footer Header -->
+                  <p class="foott2">About</p>
+                </strong></li>
+              <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
+              <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
+              <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
+            </ul>
+          </div>
+
+          <div >
+            <h2>Get the Inside Scoop</h2>
+            <span>Sign up for Sid's newsletter. Come for the cookies,stay for the inspo.#cookie4hope</span>
+            
+          </div>
+        </div>
+        <hr>
+        <div style="height:80px; padding: 20px;margin-top: 30px;">
+        <span style="margin-left: 10px;">Refund policy</span>
+        <span style="margin-left: 10px;">Privacy policy</span>
+        <span style="margin-left: 10px;">Terms of service</span>
+        <span style="margin-left: 10px;">Shipping policy</span>
+    </div>
+      </footer>
 </section>
-
-
-
-<!-- <img src="../../assets/images/2fourcookies.jpg" alt="">
-<img src="../../assets/images/3eightcookies.jpg" alt="">
-<img src="../../assets/images/4cookiesandBrowniesjpg.jpg" alt="">
-<img src="../../assets/images/6cookiemonstercookie.jpg" alt="">
-<img src="../../assets/images/7rudolph.jpg" alt="">
-<img src="../../assets/images/8chocolatemint.jpg" alt="">
-<img src="../../assets/images/9gingermolassescookie.jpg" alt="">
-<img src="../../assets/images/10peanutbuttercookie.jpg" alt="">
-<img src="../../assets/images/11oatmealnrasincookie.jpg" alt=""> -->

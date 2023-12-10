@@ -9,6 +9,7 @@ import { BrowniesService } from '../services/brownies.service';
 import { CakesService } from '../services/cakes.service';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -31,6 +32,7 @@ export class HomepageComponent {
   allCookies: string = "Cookies";
   allBrownies: string = "Brownies";
   allCakes: string = "Cakes";
+
 
   ngOnInit(): void {
 
