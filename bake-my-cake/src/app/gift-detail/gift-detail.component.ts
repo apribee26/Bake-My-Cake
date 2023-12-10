@@ -2,7 +2,6 @@ import { Component,OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Gift } from 'src/app/models/desserts';
 import { GiftsService } from 'src/app/services/gifts.service';
-import { RouteService } from 'src/app/services/route.service';
 
 
 @Component({
@@ -12,7 +11,8 @@ import { RouteService } from 'src/app/services/route.service';
 })
 export class GiftDetailComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute, private giftsService: GiftsService) { }
+  constructor(private activatedRoute: ActivatedRoute,
+     private giftsService: GiftsService ){ }
 
   gift: Gift = { name:'',price:'' , description:''};
     ngOnInit(): void {
@@ -21,6 +21,8 @@ export class GiftDetailComponent implements OnInit {
         this.giftsService.getGift(+id).subscribe(data => {
           this.gift = data;
         })
-      });
+      })
+    
+
     }
 }

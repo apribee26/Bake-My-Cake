@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { Gift } from '../models/desserts';
 import { Cookie } from '../models/cookies';
 import { Brownie } from '../models/brownies';
@@ -17,11 +17,6 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 })
 export class HomepageComponent {
-  constructor(private giftsService: GiftsService,
-    private cookiesService: CookiesService,
-    private browniesService: BrowniesService,
-    private cakesService: CakesService) { }
-
 
   gifts: Gift[] = [];
   cookies: Cookie[] = [];
@@ -33,6 +28,13 @@ export class HomepageComponent {
   allBrownies: string = "Brownies";
   allCakes: string = "Cakes";
 
+
+
+
+  constructor(private giftsService: GiftsService,
+    private cookiesService: CookiesService,
+    private browniesService: BrowniesService,
+    private cakesService: CakesService) { }
 
   ngOnInit(): void {
 

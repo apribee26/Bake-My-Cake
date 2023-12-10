@@ -15,12 +15,10 @@
         <h2 class="bizName">Sid's</h2>
         <div id=icons>
             <a href="" class="tab">SHOP</a>
-            <a href="" style="margin-right: 510px;" class="tab">RECIPE</a>
+            <a href="" class="tab">RECIPE</a>
             <a routerLink="../home"><mat-icon>home</mat-icon></a>
             <a href=""><mat-icon color="warn">favorite</mat-icon></a>
             <a href=""><mat-icon>shopping_cart</mat-icon></a>
-            
-            <a href=""></a>
         </div>
     </mat-toolbar>
 </div>
@@ -38,35 +36,34 @@
 <div class="container">
     <h1 class="dessheader">{{allGifts}}</h1>
     <div *ngFor="let gift of gifts" class="card">
-        <!-- <a routerLink="../landing-view/gift-detail/{{gift?.id}}"> -->
+        <a routerLink="../gift-detail/{{gift?.id}}">
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
             <img src="../../assets/images/{{gift?.imageURL}}" alt="" class="imgcard" width="280px" height="250px">
             <mat-card-content>
                 <h4>{{gift?.name}}</h4>
                 <span>${{gift?.price}}</span>
-                <!-- <br>
-                <span>{{gift?.description}}</span> -->
             </mat-card-content>
             <mat-card-actions>
                 <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </mat-card>
-        <!-- </a> -->
+    </a>
     </div>
 </div>
 
-<section>
-    <div id="widget3">
-        <h2>Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</h2>
+
+
+    <div>
+        <h2 class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</h2>
     </div>
-</section>
+
 <!-- Cookies -->
 
 <div class="container">
     <h1 class="dessheader">{{allCookies}}</h1>
     <div *ngFor="let cookie of cookies" class="card">
-        <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}">
+        <!-- <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}"> -->
             <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
                 <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
                 <mat-card-content>
@@ -80,7 +77,7 @@
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
                 </mat-card-actions>
             </mat-card>
-        </a>
+        <!-- </a> -->
     </div>
 </div>
 
