@@ -37,10 +37,8 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Aprielle Brown
-ex. [@DomPizzie](https://www.linkedin.com/in/aprielle-brown-53b52a67/)
+Aprielle Brown
+[@AprielleBrown](https://www.linkedin.com/in/aprielle-brown-53b52a67/)
 
 ## Version History
 
