@@ -6,7 +6,7 @@ Bake My Cake is an online website that gives user's the means to access their sw
 
 An in-depth paragraph about your project and overview of use.
 
-
+That's why we offer customizable dessert creations that cater to your individual preferences. Whether you're craving a luscious cake that bursts with exotic flavors or a delicate pastry that melts in your mouth, our talented team of pastry artists is dedicated to crafting the perfect dessert just for you.
 
 ## Getting Started
 
