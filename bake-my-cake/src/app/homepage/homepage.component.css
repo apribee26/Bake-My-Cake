@@ -18,14 +18,28 @@
 
 }
 
-#widget3{
+.widget3{
     background-color: black;
     color: white;
     height: 60px;
+   
+     display: flex;
     
-    display: flex;
+animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+    /* white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip; */
     
 }
+
+div#widget3:hover {
+    overflow: visible;
+  }
 /* Header */
 #header {
     display: flex;
