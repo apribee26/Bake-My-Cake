@@ -24,35 +24,35 @@
       },
       {
         "id": 4,
-        "title": "Ginger Delight Cookie",
+        "name": "Ginger Delight Cookie",
         "price": "2.95",
         "imageURL":"../../assets/images/9gingermolassescookie.jpg",
         "description": "Fall in love with our tender molasses cookie with sweet spices of cinnamon and nutmeg and complimenting flavor of the spicy ginger. Sprinkled with large granulated sugar to make them just as beautiful as they are delicious."
       },
       {
         "id": 5,
-        "title": "Peanut Butter Cookie",
+        "name": "Peanut Butter Cookie",
         "price": "2.95",
         "imageURL":"../../assets/images/10peanutbuttercookie.jpg",
         "description": "A total peanut butter stunner. Our soft, sweet peanut butter cookie filled with creamy peanut butter chips."
       },
       {
         "id": 6,
-        "title": "Oatmeal Rasin Cookie",
+        "name": "Oatmeal Rasin Cookie",
         "price": "2.95",
         "imageURL":"../../assets/images/11oatmealnrasincookie.jpg",
         "description": "A treat that's like a hug for the soul. Warm cinnamon and sweet molasses layered with plenty of oatmeal and raisins."
       },
       {
         "id": 7,
-        "title": "Vegan Chocolate Chip Cookie",
+        "name": "Vegan Chocolate Chip Cookie",
         "price": "2.95",
         "imageURL":"../../assets/images/12veganchocolatechip.jpg",
         "description": "A vegan double chocolate cookie with the same levels of dark chocolate decadence and melty (dairy-free) chocolate chunks."
       },
       {
         "id": 8,
-        "title": "Vegan Confetti Cookie",
+        "name": "Vegan Confetti Cookie",
         "price": "2.95",
         "imageURL":"../../assets/images/13veganconfetti.jpg",
         "description": "Sweet vanilla and all of the sprinkles make this an extra special vegan treat for an extra special day."
