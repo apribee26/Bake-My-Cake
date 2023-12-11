@@ -36,7 +36,7 @@ var __setFunctionName = (this && this.__setFunctionName) || function (f, name, p
     if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
     return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
 };
-System.register("app/gift-detail/gift-detail.component", ["@angular/core"], function (exports_1, context_1) {
+System.register("app/operating-view/gift-detail/gift-detail.component", ["@angular/core"], function (exports_1, context_1) {
     "use strict";
     var core_1, GiftDetailComponent;
     var __moduleName = context_1 && context_1.id;
@@ -83,7 +83,7 @@ System.register("app/gift-detail/gift-detail.component", ["@angular/core"], func
         }
     };
 });
-System.register("app/cookie-detail/cookie-detail.component", ["@angular/core"], function (exports_2, context_2) {
+System.register("app/operating-view/cookie-detail/cookie-detail.component", ["@angular/core"], function (exports_2, context_2) {
     "use strict";
     var core_2, CookieDetailComponent;
     var __moduleName = context_2 && context_2.id;
@@ -186,7 +186,7 @@ System.register("app/services/brownies.service", ["@angular/core"], function (ex
         }
     };
 });
-System.register("app/brownie-detail/brownie-detail.component", ["@angular/core"], function (exports_5, context_5) {
+System.register("app/operating-view/brownie-detail/brownie-detail.component", ["@angular/core"], function (exports_5, context_5) {
     "use strict";
     var core_4, BrownieDetailComponent;
     var __moduleName = context_5 && context_5.id;
@@ -288,7 +288,7 @@ System.register("app/services/cakes.service", ["@angular/core"], function (expor
         }
     };
 });
-System.register("app/cake-detail/cake-detail.component", ["@angular/core"], function (exports_8, context_8) {
+System.register("app/operating-view/cake-detail/cake-detail.component", ["@angular/core"], function (exports_8, context_8) {
     "use strict";
     var core_6, CakeDetailComponent;
     var __moduleName = context_8 && context_8.id;
@@ -629,7 +629,7 @@ System.register("app/not-found/not-found.component", ["@angular/core"], function
         }
     };
 });
-System.register("app/shopping-cart/shopping-cart.component", ["@angular/core"], function (exports_17, context_17) {
+System.register("app/tabs/shopping-cart/shopping-cart.component", ["@angular/core"], function (exports_17, context_17) {
     "use strict";
     var core_12, ShoppingCartComponent;
     var __moduleName = context_17 && context_17.id;
@@ -662,7 +662,7 @@ System.register("app/shopping-cart/shopping-cart.component", ["@angular/core"], 
         }
     };
 });
-System.register("app/favorites/favorites.component", ["@angular/core"], function (exports_18, context_18) {
+System.register("app/tabs/favorites/favorites.component", ["@angular/core"], function (exports_18, context_18) {
     "use strict";
     var core_13, FavoritesComponent;
     var __moduleName = context_18 && context_18.id;
@@ -695,7 +695,7 @@ System.register("app/favorites/favorites.component", ["@angular/core"], function
         }
     };
 });
-System.register("app/app-routing.module", ["@angular/core", "@angular/router", "app/gift-detail/gift-detail.component", "app/cookie-detail/cookie-detail.component", "app/brownie-detail/brownie-detail.component", "app/cake-detail/cake-detail.component", "app/homepage/homepage.component", "app/not-found/not-found.component", "app/shopping-cart/shopping-cart.component", "app/favorites/favorites.component"], function (exports_19, context_19) {
+System.register("app/app-routing.module", ["@angular/core", "@angular/router", "app/operating-view/gift-detail/gift-detail.component", "app/operating-view/cookie-detail/cookie-detail.component", "app/operating-view/brownie-detail/brownie-detail.component", "app/operating-view/cake-detail/cake-detail.component", "app/homepage/homepage.component", "app/not-found/not-found.component", "app/tabs/shopping-cart/shopping-cart.component", "app/tabs/favorites/favorites.component"], function (exports_19, context_19) {
     "use strict";
     var core_14, router_1, gift_detail_component_1, cookie_detail_component_1, brownie_detail_component_1, cake_detail_component_1, homepage_component_1, not_found_component_1, shopping_cart_component_1, favorites_component_1, routes, AppRoutingModule;
     var __moduleName = context_19 && context_19.id;
@@ -878,9 +878,9 @@ System.register("app/search/search.component", ["@angular/core"], function (expo
         }
     };
 });
-System.register("app/about-us/about-us.component", ["@angular/core"], function (exports_22, context_22) {
+System.register("app/header/header.component", ["@angular/core"], function (exports_22, context_22) {
     "use strict";
-    var core_17, AboutUsComponent;
+    var core_17, HeaderComponent;
     var __moduleName = context_22 && context_22.id;
     return {
         setters: [
@@ -889,69 +889,36 @@ System.register("app/about-us/about-us.component", ["@angular/core"], function (
             }
         ],
         execute: function () {
-            exports_22("AboutUsComponent", AboutUsComponent = (() => {
+            exports_22("HeaderComponent", HeaderComponent = (() => {
                 let _classDecorators_16 = [core_17.Component({
-                        selector: 'app-about-us',
-                        templateUrl: './about-us.component.html',
-                        styleUrls: ['./about-us.component.css']
+                        selector: 'app-header',
+                        templateUrl: './header.component.html',
+                        styleUrls: ['./header.component.css']
                     })];
                 let _classDescriptor_16;
                 let _classExtraInitializers_16 = [];
                 let _classThis_16;
-                var AboutUsComponent = _classThis_16 = class {
+                var HeaderComponent = _classThis_16 = class {
                 };
-                __setFunctionName(_classThis_16, "AboutUsComponent");
+                __setFunctionName(_classThis_16, "HeaderComponent");
                 (() => {
                     __esDecorate(null, _classDescriptor_16 = { value: _classThis_16 }, _classDecorators_16, { kind: "class", name: _classThis_16.name }, null, _classExtraInitializers_16);
-                    AboutUsComponent = _classThis_16 = _classDescriptor_16.value;
+                    HeaderComponent = _classThis_16 = _classDescriptor_16.value;
                     __runInitializers(_classThis_16, _classExtraInitializers_16);
                 })();
-                return AboutUsComponent = _classThis_16;
+                return HeaderComponent = _classThis_16;
             })());
         }
     };
 });
-System.register("app/header/header.component", ["@angular/core"], function (exports_23, context_23) {
+System.register("app/app.module", ["@angular/core", "@angular/platform-browser", "@angular/common/http", "@angular/forms", "app/app-routing.module", "app/app.component", "@angular/platform-browser/animations", "@angular/material/grid-list", "@angular/material/toolbar", "@angular/material/card", "@angular/material/icon", "@angular/material/button", "@angular/material/input", "@angular/material/expansion", "@angular/material/core", "@angular/material/progress-bar", "@angular/cdk/layout", "@angular/material/sidenav", "@angular/material/list", "@angular/material/snack-bar", "@angular/material/select", "app/search/search.component", "app/homepage/homepage.component", "app/not-found/not-found.component", "app/tabs/shopping-cart/shopping-cart.component", "app/operating-view/gift-detail/gift-detail.component", "app/operating-view/cookie-detail/cookie-detail.component", "app/operating-view/brownie-detail/brownie-detail.component", "app/operating-view/cake-detail/cake-detail.component", "app/header/header.component", "app/tabs/favorites/favorites.component"], function (exports_23, context_23) {
     "use strict";
-    var core_18, HeaderComponent;
+    var core_18, platform_browser_1, http_1, forms_1, app_routing_module_1, app_component_1, animations_1, grid_list_1, toolbar_1, card_1, icon_1, button_1, input_1, expansion_1, core_19, progress_bar_1, layout_1, sidenav_1, list_1, snack_bar_1, select_1, search_component_1, homepage_component_2, not_found_component_2, shopping_cart_component_2, gift_detail_component_2, cookie_detail_component_2, brownie_detail_component_2, cake_detail_component_2, header_component_1, favorites_component_2, AppModule;
     var __moduleName = context_23 && context_23.id;
     return {
         setters: [
             function (core_18_1) {
                 core_18 = core_18_1;
-            }
-        ],
-        execute: function () {
-            exports_23("HeaderComponent", HeaderComponent = (() => {
-                let _classDecorators_17 = [core_18.Component({
-                        selector: 'app-header',
-                        templateUrl: './header.component.html',
-                        styleUrls: ['./header.component.css']
-                    })];
-                let _classDescriptor_17;
-                let _classExtraInitializers_17 = [];
-                let _classThis_17;
-                var HeaderComponent = _classThis_17 = class {
-                };
-                __setFunctionName(_classThis_17, "HeaderComponent");
-                (() => {
-                    __esDecorate(null, _classDescriptor_17 = { value: _classThis_17 }, _classDecorators_17, { kind: "class", name: _classThis_17.name }, null, _classExtraInitializers_17);
-                    HeaderComponent = _classThis_17 = _classDescriptor_17.value;
-                    __runInitializers(_classThis_17, _classExtraInitializers_17);
-                })();
-                return HeaderComponent = _classThis_17;
-            })());
-        }
-    };
-});
-System.register("app/app.module", ["@angular/core", "@angular/platform-browser", "@angular/common/http", "@angular/forms", "app/app-routing.module", "app/app.component", "@angular/platform-browser/animations", "@angular/material/grid-list", "@angular/material/toolbar", "@angular/material/card", "@angular/material/icon", "@angular/material/button", "@angular/material/input", "@angular/material/expansion", "@angular/material/core", "@angular/material/progress-bar", "@angular/cdk/layout", "@angular/material/sidenav", "@angular/material/list", "@angular/material/snack-bar", "@angular/material/select", "app/search/search.component", "app/homepage/homepage.component", "app/about-us/about-us.component", "app/not-found/not-found.component", "app/shopping-cart/shopping-cart.component", "app/gift-detail/gift-detail.component", "app/cookie-detail/cookie-detail.component", "app/brownie-detail/brownie-detail.component", "app/cake-detail/cake-detail.component", "app/header/header.component", "app/favorites/favorites.component"], function (exports_24, context_24) {
-    "use strict";
-    var core_19, platform_browser_1, http_1, forms_1, app_routing_module_1, app_component_1, animations_1, grid_list_1, toolbar_1, card_1, icon_1, button_1, input_1, expansion_1, core_20, progress_bar_1, layout_1, sidenav_1, list_1, snack_bar_1, select_1, search_component_1, homepage_component_2, about_us_component_1, not_found_component_2, shopping_cart_component_2, gift_detail_component_2, cookie_detail_component_2, brownie_detail_component_2, cake_detail_component_2, header_component_1, favorites_component_2, AppModule;
-    var __moduleName = context_24 && context_24.id;
-    return {
-        setters: [
-            function (core_19_1) {
-                core_19 = core_19_1;
             },
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
@@ -992,8 +959,8 @@ System.register("app/app.module", ["@angular/core", "@angular/platform-browser",
             function (expansion_1_1) {
                 expansion_1 = expansion_1_1;
             },
-            function (core_20_1) {
-                core_20 = core_20_1;
+            function (core_19_1) {
+                core_19 = core_19_1;
             },
             function (progress_bar_1_1) {
                 progress_bar_1 = progress_bar_1_1;
@@ -1018,9 +985,6 @@ System.register("app/app.module", ["@angular/core", "@angular/platform-browser",
             },
             function (homepage_component_2_1) {
                 homepage_component_2 = homepage_component_2_1;
-            },
-            function (about_us_component_1_1) {
-                about_us_component_1 = about_us_component_1_1;
             },
             function (not_found_component_2_1) {
                 not_found_component_2 = not_found_component_2_1;
@@ -1048,13 +1012,12 @@ System.register("app/app.module", ["@angular/core", "@angular/platform-browser",
             }
         ],
         execute: function () {
-            exports_24("AppModule", AppModule = (() => {
-                let _classDecorators_18 = [core_19.NgModule({
+            exports_23("AppModule", AppModule = (() => {
+                let _classDecorators_17 = [core_18.NgModule({
                         declarations: [
                             app_component_1.AppComponent,
                             search_component_1.SearchComponent,
                             homepage_component_2.HomepageComponent,
-                            about_us_component_1.AboutUsComponent,
                             not_found_component_2.NotFoundComponent,
                             shopping_cart_component_2.ShoppingCartComponent,
                             gift_detail_component_2.GiftDetailComponent,
@@ -1077,7 +1040,7 @@ System.register("app/app.module", ["@angular/core", "@angular/platform-browser",
                             input_1.MatInputModule,
                             grid_list_1.MatGridListModule,
                             expansion_1.MatExpansionModule,
-                            core_20.MatRippleModule,
+                            core_19.MatRippleModule,
                             layout_1.LayoutModule,
                             sidenav_1.MatSidenavModule,
                             list_1.MatListModule,
@@ -1089,26 +1052,26 @@ System.register("app/app.module", ["@angular/core", "@angular/platform-browser",
                         providers: [],
                         bootstrap: [app_component_1.AppComponent]
                     })];
-                let _classDescriptor_18;
-                let _classExtraInitializers_18 = [];
-                let _classThis_18;
-                var AppModule = _classThis_18 = class {
+                let _classDescriptor_17;
+                let _classExtraInitializers_17 = [];
+                let _classThis_17;
+                var AppModule = _classThis_17 = class {
                 };
-                __setFunctionName(_classThis_18, "AppModule");
+                __setFunctionName(_classThis_17, "AppModule");
                 (() => {
-                    __esDecorate(null, _classDescriptor_18 = { value: _classThis_18 }, _classDecorators_18, { kind: "class", name: _classThis_18.name }, null, _classExtraInitializers_18);
-                    AppModule = _classThis_18 = _classDescriptor_18.value;
-                    __runInitializers(_classThis_18, _classExtraInitializers_18);
+                    __esDecorate(null, _classDescriptor_17 = { value: _classThis_17 }, _classDecorators_17, { kind: "class", name: _classThis_17.name }, null, _classExtraInitializers_17);
+                    AppModule = _classThis_17 = _classDescriptor_17.value;
+                    __runInitializers(_classThis_17, _classExtraInitializers_17);
                 })();
-                return AppModule = _classThis_18;
+                return AppModule = _classThis_17;
             })());
         }
     };
 });
-System.register("main", ["@angular/platform-browser-dynamic", "app/app.module"], function (exports_25, context_25) {
+System.register("main", ["@angular/platform-browser-dynamic", "app/app.module"], function (exports_24, context_24) {
     "use strict";
     var platform_browser_dynamic_1, app_module_1;
-    var __moduleName = context_25 && context_25.id;
+    var __moduleName = context_24 && context_24.id;
     return {
         setters: [
             function (platform_browser_dynamic_1_1) {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Brownie } from '../models/brownies';
-import { BrowniesService } from '../services/brownies.service';
+import { Brownie } from '../../models/brownies';
+import { BrowniesService } from '../../services/brownies.service';
 
 @Component({
   selector: 'app-brownie-detail',

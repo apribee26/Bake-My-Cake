@@ -26,17 +26,17 @@ import { MatSelectModule } from '@angular/material/select';
 import { SearchComponent } from './search/search.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
-import { AboutUsComponent } from './about-us/about-us.component';
+
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { GiftDetailComponent } from './gift-detail/gift-detail.component';
-import { CookieDetailComponent } from './cookie-detail/cookie-detail.component';
-import { BrownieDetailComponent } from './brownie-detail/brownie-detail.component';
-import { CakeDetailComponent } from './cake-detail/cake-detail.component';
+import { ShoppingCartComponent } from './tabs/shopping-cart/shopping-cart.component';
+import { GiftDetailComponent } from './operating-view/gift-detail/gift-detail.component';
+import { CookieDetailComponent } from './operating-view/cookie-detail/cookie-detail.component';
+import { BrownieDetailComponent } from './operating-view/brownie-detail/brownie-detail.component';
+import { CakeDetailComponent } from './operating-view/cake-detail/cake-detail.component';
 import { HeaderComponent } from './header/header.component';
-import { FavoritesComponent } from './favorites/favorites.component';
+import { FavoritesComponent } from './tabs/favorites/favorites.component';
 
 
 
@@ -47,7 +47,6 @@ import { FavoritesComponent } from './favorites/favorites.component';
     AppComponent,
     SearchComponent,
     HomepageComponent,
-    AboutUsComponent,
     NotFoundComponent,
     ShoppingCartComponent,
     GiftDetailComponent,

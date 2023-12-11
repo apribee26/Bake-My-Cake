@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GiftDetailComponent } from './gift-detail/gift-detail.component';
-import { CookieDetailComponent } from './cookie-detail/cookie-detail.component';
-import { BrownieDetailComponent } from './brownie-detail/brownie-detail.component';
-import { CakeDetailComponent } from './cake-detail/cake-detail.component';
+import { GiftDetailComponent } from './operating-view/gift-detail/gift-detail.component';
+import { CookieDetailComponent } from './operating-view/cookie-detail/cookie-detail.component';
+import { BrownieDetailComponent } from './operating-view/brownie-detail/brownie-detail.component';
+import { CakeDetailComponent } from './operating-view/cake-detail/cake-detail.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { FavoritesComponent } from './favorites/favorites.component';
+import { ShoppingCartComponent } from './tabs/shopping-cart/shopping-cart.component';
+import { FavoritesComponent } from './tabs/favorites/favorites.component';
 
 
 const routes: Routes = [{

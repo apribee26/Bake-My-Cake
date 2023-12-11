@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Cake } from '../models/cakes';
-import { CakesService } from '../services/cakes.service';
+import { Cake } from '../../models/cakes';
+import { CakesService } from '../../services/cakes.service';
 
 @Component({
   selector: 'app-cake-detail',
