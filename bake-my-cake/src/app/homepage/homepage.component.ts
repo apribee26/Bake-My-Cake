@@ -28,9 +28,6 @@ export class HomepageComponent {
   allBrownies: string = "Brownies";
   allCakes: string = "Cakes";
 
-
-
-
   constructor(private giftsService: GiftsService,
     private cookiesService: CookiesService,
     private browniesService: BrowniesService,

@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GiftDetailComponent } from './gift-detail/gift-detail.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { GiftDetailComponent } from './landing-view/gift-detail/gift-detail.component';
+
 
 const routes: Routes = [{
   path: "home",
   component: HomepageComponent
 },
 {
-  path: "/landing-view/gift-detail/:id",
+  path: "gift-detail/:id",
   component: GiftDetailComponent
 }, 
-// {
-//   path: "",
-//   redirectTo: "/home",
-//   pathMatch: "full"
-// },
+{
+  path: "",
+  redirectTo: "/home",
+  pathMatch: "full"
+},
 {
   path: "**",
   component: NotFoundComponent
@@ -33,3 +34,4 @@ export class AppRoutingModule {
 
 
 }
+

@@ -1,19 +1,16 @@
-.card {
-    width: 16rem;
-    margin-left: 60px;
-    margin-bottom: 30px;
-    float: left;
-    
+
+.card-content{
+   margin: auto;
+    /* float: left; */
+    padding: 12px;
+    width: 300px;
+    /* margin: auto; */
 }
 
-.container {
-    /* height: 55rem; */
-    height: 675px;
-   margin-left: 150px;
-   border-radius: 5px;
-   border: 2px solid white;
-} 
- .card-content {
-    /* height: 490px; */
-    height: 391px;
+h4{
+    text-align: center;
 }
+
+mat-grid-tile {
+    background: lightblue;
+  }

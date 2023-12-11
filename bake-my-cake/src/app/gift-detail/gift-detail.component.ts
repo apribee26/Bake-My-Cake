@@ -2,7 +2,7 @@ import { Component,OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Gift } from 'src/app/models/desserts';
 import { GiftsService } from 'src/app/services/gifts.service';
-
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-gift-detail',

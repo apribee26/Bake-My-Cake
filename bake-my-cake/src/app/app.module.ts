@@ -35,6 +35,8 @@ import { GiftDetailComponent } from './gift-detail/gift-detail.component';
 import { CookieDetailComponent } from './landing-view/cookie-detail/cookie-detail.component';
 import { BrownieDetailComponent } from './landing-view/brownie-detail/brownie-detail.component';
 import { CakeDetailComponent } from './landing-view/cake-detail/cake-detail.component';
+import { HeaderComponent } from './header/header.component';
+
 
 
 
@@ -45,13 +47,14 @@ import { CakeDetailComponent } from './landing-view/cake-detail/cake-detail.comp
     HomepageComponent,
     AboutUsComponent,
     NotFoundComponent,
-
     ShoppingCartComponent,
-     GiftDetailComponent,
-     CookieDetailComponent,
-     BrownieDetailComponent,
-     CakeDetailComponent,
-   
+    GiftDetailComponent,
+    CookieDetailComponent,
+    BrownieDetailComponent,
+    CakeDetailComponent,
+    HeaderComponent,
+
+
   ],
   imports: [
     BrowserModule,
