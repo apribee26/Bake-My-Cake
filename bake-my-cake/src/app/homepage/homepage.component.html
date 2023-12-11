@@ -1,17 +1,15 @@
-
-
+<!-- Header -->
 <app-header></app-header>
 
 <!-- Search -->
-<!-- <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search> -->
+<app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
 
 <!-- Dashboard -->
 <div>
-    <img src="../../assets/images/1sid.png" class="sid1">
+  <img src="../../assets/images/1sid.png" alt="" class="sid1">
 </div>
 
 <!-- Gifts -->
-
 <div class="container">
     <h1 class="dessheader">{{allGifts}}</h1>
     <div *ngFor="let gift of gifts" class="card">
@@ -31,8 +29,6 @@
     </div>
 </div>
 
-
-
     <div>
         <h2 class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</h2>
     </div>
@@ -50,7 +46,7 @@
                     <span>${{cookie?.price}}</span>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
+                    <button mat-raised-button (click)="addToCart(cookie.price)"  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
                 </mat-card-actions>
             </mat-card>
@@ -78,8 +74,8 @@
         </a>
     </div>
 </div>
-<!-- Cakes -->
 
+<!-- Cakes -->
 
 <div class="container">
     <h1 class="dessheader">{{allCakes}}</h1>
@@ -90,8 +86,6 @@
             <mat-card-content>
                 <h4>{{cake?.name}}</h4>
                 <span>${{cake?.price}}</span>
-                <!-- <br>
-                <span>{{cake?.description}}</span> -->
             </mat-card-content>
             <mat-card-actions>
                 <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>

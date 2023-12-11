@@ -28,11 +28,7 @@ animation-name: rotate;
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-play-state: running;
-    /* white-space: nowrap;
-    width: 200px;
-    border: 1px solid #000000;
-    overflow: hidden;
-    text-overflow: clip; */
+ 
     
 }
 
@@ -51,13 +47,12 @@ div#widget3:hover {
 
 
 .bizName {
-    color: black;
-    margin-left: 20px;
-    font-size: 40px;
+    width: 260px;
+    
 }
 #icons {
     position: absolute;
-    right: 10px;
+    right: 20px;
 }
 
 #icons>* {

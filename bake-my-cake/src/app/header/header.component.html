@@ -8,17 +8,18 @@
         <mat-progress-bar style="width: 400px; margin-left: 30px;" mode="determinate" value="40"></mat-progress-bar>
     </mat-toolbar>
 </div>
-
+<!-- <h2 class="bizName">Sid's</h2>  -->
 <!-- Header -->]
 <div>
+
     <mat-toolbar id="header">
-        <h2 class="bizName">Sid's</h2>
+        <img src="../../assets/images/Sketches.png" alt="" class="bizName" style="margin-right: 100px;">
         <div id=icons>
             <a href="" class="tab">SHOP</a>
             <a href="" class="tab">RECIPE</a>
             <a routerLink="../home"><mat-icon>home</mat-icon></a>
-            <a href=""><mat-icon color="warn">favorite</mat-icon></a>
-            <a href=""><mat-icon>shopping_cart</mat-icon></a>
+            <a routerLink="../favorite"><mat-icon color="warn">favorite</mat-icon></a>
+            <a routerLink="../shopping"><mat-icon>shopping_cart</mat-icon></a>
         </div>
     </mat-toolbar>
 </div>

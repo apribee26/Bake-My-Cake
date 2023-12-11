@@ -36,6 +36,8 @@ import { CookieDetailComponent } from './cookie-detail/cookie-detail.component';
 import { BrownieDetailComponent } from './brownie-detail/brownie-detail.component';
 import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 import { HeaderComponent } from './header/header.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+
 
 
 
@@ -53,6 +55,8 @@ import { HeaderComponent } from './header/header.component';
     BrownieDetailComponent,
     CakeDetailComponent,
     HeaderComponent,
+    FavoritesComponent,
+  
 
 
   ],

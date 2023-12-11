@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GiftDetailComponent } from './gift-detail/gift-detail.component';
 import { CookieDetailComponent } from './cookie-detail/cookie-detail.component';
+import { BrownieDetailComponent } from './brownie-detail/brownie-detail.component';
+import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 
 const routes: Routes = [{
@@ -18,6 +22,22 @@ const routes: Routes = [{
   path: "cookie-detail/:id",
   component: CookieDetailComponent
 },  
+{
+  path: "brownie-detail/:id",
+  component: BrownieDetailComponent
+},
+{
+  path: "cake-detail/:id",
+  component: CakeDetailComponent
+},
+{
+  path: "shopping",
+  component: ShoppingCartComponent
+}, 
+{
+  path: "favorite",
+  component: FavoritesComponent
+},    
 {
   path: "",
   redirectTo: "/home",
