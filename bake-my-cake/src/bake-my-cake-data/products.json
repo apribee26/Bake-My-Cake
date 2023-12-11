@@ -1,0 +1,139 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Merry/Happpy 4-pack",
+        "price": "9.50",
+        "imageURL":"../../assets/images/2fourcookies.jpg",
+        "description": "Six warm,cookies pre-wrapped in a Merry/Happy box sleeve and delivered to your friends and family"
+       
+      },
+      {
+        "id": 2,
+        "name": "Naughty/Nice 8-pack",
+        "price": "17.50",
+        "imageURL":"../../assets/images/3eightcookies.jpg",
+        "description": "Which list are they on? Give a box of twelve cookies wrapped in our cheeky Naughty/Nice box sleeve."
+      },
+      {
+        "id": 3,
+        "name": "Sids Present 12-pack",
+        "price": "31.00",
+        "imageURL":"../../assets/images/4cookiesandBrowniesjpg.jpg",
+        "description": "Twelve warm, brownies or cookies of your choosing with a gift wrap and tag box sleeve. Easy peasy!"
+      },
+      {
+        "id": 4,
+        "name": "Give Cookies 10' Cake",
+        "price": "32.00",
+        "imageURL":"../../assets/images/4cookiesandBrowniesjpg.jpg", 
+        "description": "The gift that keeps on giving. One Classic flavor, your choice of decorative icing, and an optional message applied with buttercream icing and wrapped with a holiday message. Up to 8 servings."
+      },
+      {
+        "id": 5,
+        "name": "Cookie Monster Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/6cookiemonstercookie.jpg",
+        "description": "With a signature blue vanilla dough that stands out for all the best reasons and a incredible lineups of mix-ins like caramel bites, oreos, mini marshmallows, and chocolate chips."
+
+      },
+      {
+        "id": 6,
+        "name": "Rudolph's Favorite Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/7rudolph.jpg",
+        "description": "This red cookie will certainly be the first to catch your eye. Red velvet dough with savory creamcheese chip. Do not mistake her density for merely surface-level indulgence."
+      },
+      {
+        "id": 7,
+        "name": "Chocolate Mint Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/8chocolatemint.jpg",
+        "description": "Our take on a favorite flavor combo. A warm dark chocolate cookie with mint chips and chunks of milk chocolate."
+      },
+      {
+        "id": 8,
+        "name": "Ginger Delight Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/9gingermolassescookie.jpg",
+        "description": "Fall in love with our tender molasses cookie with sweet spices of cinnamon and nutmeg and complimenting flavor of the spicy ginger. Sprinkled with large granulated sugar to make them just as beautiful as they are delicious."
+      },
+      {
+        "id": 9,
+        "name": "Peanut Butter Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/10peanutbuttercookie.jpg",
+        "description": "A total peanut butter stunner. Our soft, sweet peanut butter cookie filled with creamy peanut butter chips."
+      },
+      {
+        "id": 10,
+        "name": "Oatmeal Rasin Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/11oatmealnrasincookie.jpg",
+        "description": "A treat that's like a hug for the soul. Warm cinnamon and sweet molasses layered with plenty of oatmeal and raisins."
+      },
+      {
+        "id": 11,
+        "name": "Vegan Chocolate Chip Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/12veganchocolatechip.jpg",
+        "description": "A vegan double chocolate cookie with the same levels of dark chocolate decadence and melty (dairy-free) chocolate chunks."
+      },
+      {
+        "id": 12,
+        "name": "Vegan Confetti Cookie",
+        "price": "2.95",
+        "imageURL":"../../assets/images/13veganconfetti.jpg",
+        "description": "Sweet vanilla and all of the sprinkles make this an extra special vegan treat for an extra special day."
+      },
+      {
+        "id": 13,
+        "name": "Merry Brownie",
+        "price": "4.95",
+        "imageURL":"../../assets/images/14holidaybrownie.jpg",
+        "description": "This super chocolaty brownie (made with black cocoa) is packed with sprinkles and crushed candy canes."
+      },
+      {
+        "id": 14,
+        "name": "Cookie Monster Brownie",
+        "price": "4.95",
+        "imageURL":"../../assets/images/15cookiemonbrownie.jpg",
+        "description": "Oreo cookies, fudgy brownies, chunks of chocolate chip cookie, and cookies and cream frosting are truly and impressive combination."
+      },
+      {
+        "id": 15,
+        "name": "Vegan Chocolate Brownie",
+        "price": "4.95",
+        "imageURL":"../../assets/images/16veganchocolatebrownie.jpg",
+        "description": "Our vegan take on the “classic brownie” has a sweet, rich chocolaty taste and satisfying chewy texture, all without eggs or butter."
+      },
+      {
+        "id": 16,
+        "name": "Matcha Brownie",
+        "price": "4.95",
+        "imageURL":"../../assets/images/17matchabrownie.jpg",
+        "description": "You will these enjoy moist, rich, dense treats, full of intense matcha flavor."
+      },
+      {
+        "id": 17,
+        "name": "Bring Dessert Cookie Cake 10`",
+        "price": "31.00",
+        "imageURL":"../../assets/images/18smoorescookieCake.jpg",
+        "description": "One Classic cookie flavor, your choice of decorative icing and up to (2) toppings. Up to (8) servings."
+      },
+      {
+        "id": 18,
+        "name": "6` Cookie Cake",
+        "price": "17.75",
+        "imageURL":"../../assets/images/19chocolatechipcookiecake.jpg",
+        "description": "We've taken your favorite Deluxe cookie flavor and turned it into a delicious 6.Serves up to 4."
+      },
+      {
+        "id": 19,
+        "name": "Sid`s Ice Cream Cookie-Cake",
+        "price": "44.50",
+        "imageURL":"../../assets/images/20cookiemonstercake.jpg",
+        "description": "Seriously. It’s like a cloud of Devil’s Food Cake rained down Cookies into a sea of ice cream. Okay, it’s not exactly like that, but it’s close.Serves 12."
+      }
+    ]
+  }
