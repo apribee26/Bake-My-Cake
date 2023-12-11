@@ -42,45 +42,40 @@
 <div class="container">
     <h1 class="dessheader">{{allCookies}}</h1>
     <div *ngFor="let cookie of cookies" class="card">
-        <!-- <a routerLink="../landing-view/cookie-detail/{{cookie?.id}}"> -->
+        <a routerLink="../cookie-detail/{{cookie?.id}}">
             <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
                 <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
                 <mat-card-content>
                     <h4>{{cookie?.name}}</h4>
                     <span>${{cookie?.price}}</span>
-                    <!-- <br>
-                    <span>{{cookie?.description}}</span> -->
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
                 </mat-card-actions>
             </mat-card>
-        <!-- </a> -->
+        </a>
     </div>
 </div>
 
 <!-- Brownies -->
 
-
 <div class="container">
     <h1 class="dessheader">{{allBrownies}}</h1>
     <div *ngFor="let brownie of brownies" class="card">
-        <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+        <a routerLink="../brownie-detail/{{brownie?.id}}">
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
             <img src="../../assets/images/{{brownie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
             <mat-card-content>
                 <h4>{{brownie?.name}}</h4>
                 <span>${{brownie?.price}}</span>
-                <!-- <br>
-                <span>{{brownie?.description}}</span> -->
             </mat-card-content>
             <mat-card-actions>
                 <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </mat-card>
-        <!-- </a> -->
+        </a>
     </div>
 </div>
 <!-- Cakes -->
@@ -89,7 +84,7 @@
 <div class="container">
     <h1 class="dessheader">{{allCakes}}</h1>
     <div *ngFor="let cake of cakes" class="card">
-        <!-- <a routerLink="../fruit-detail/{{fruit?.id}}"> -->
+        <a routerLink="../cake-detail/{{cake?.id}}">
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
             <img src="../../assets/images/{{cake?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
             <mat-card-content>
@@ -103,7 +98,7 @@
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </mat-card>
-        <!-- </a> -->
+        </a>
     </div>
 </div>
 

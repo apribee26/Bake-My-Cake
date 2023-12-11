@@ -2,7 +2,6 @@ import { Component,OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Cookie } from 'src/app/models/cookies';
 import { CookiesService } from 'src/app/services/cookies.service';
-import { RouteService } from 'src/app/services/route.service';
 
 @Component({
   selector: 'app-cookie-detail',
@@ -11,7 +10,7 @@ import { RouteService } from 'src/app/services/route.service';
 })
 export class CookieDetailComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute, private cookiesService: CookiesService,private routeService:RouteService) { }
+  constructor(private activatedRoute: ActivatedRoute, private cookiesService: CookiesService) { }
   cookie: Cookie = { name:'',price:'' , description:''};
     ngOnInit(): void {
       this.activatedRoute.paramMap.subscribe(params => {

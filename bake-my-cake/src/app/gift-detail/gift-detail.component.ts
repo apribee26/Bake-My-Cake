@@ -1,4 +1,4 @@
-import { Component,OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Gift } from 'src/app/models/desserts';
 import { GiftsService } from 'src/app/services/gifts.service';
@@ -12,17 +12,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 export class GiftDetailComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
-     private giftsService: GiftsService ){ }
+    private giftsService: GiftsService) { }
 
-  gift: Gift = { name:'',price:'' , description:''};
-    ngOnInit(): void {
-      this.activatedRoute.paramMap.subscribe(params => {
-        let id = params.get("id") ?? 0;
-        this.giftsService.getGift(+id).subscribe(data => {
-          this.gift = data;
-        })
+  gift: Gift = { name: '', price: '', description: '' };
+  ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe(params => {
+      let id = params.get("id") ?? 0;
+      this.giftsService.getGift(+id).subscribe(data => {
+        this.gift = data;
       })
-    
-
-    }
+    })
+  }
 }

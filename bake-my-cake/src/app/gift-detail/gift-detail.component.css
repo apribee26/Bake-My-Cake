@@ -1,4 +1,3 @@
-
 .card-content{
    margin: auto;
     /* float: left; */
@@ -10,7 +9,3 @@
 h4{
     text-align: center;
 }
-
-mat-grid-tile {
-    background: lightblue;
-  }

@@ -1,21 +1,21 @@
 <app-header></app-header>
 <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-    <img src="../../assets/images/{{gift.imageURL}}" alt="gifts" width="280px" height="250px">
+    <img src="../../assets/images/{{cake.imageURL}}" alt="gifts" width="280px" height="250px">
     <mat-card-content>
-        <h4><strong>{{gift.name}}</strong></h4>
-        <span><strong>${{gift.price}}</strong></span>
+        <h4><strong>{{cake.name}}</strong></h4>
+        <span><strong>${{cake.price}}</strong></span>
         <br>
-        <span>{{gift.description}}</span>
+        <span>{{cake.description}}</span>
         <form id="edit-form">
             <mat-form-field class="input-field" style="margin-top: 30px;">
                 <mat-label>Quantity</mat-label>
                 <input matInput name="quantity" type="number" min="1" max="50">
             </mat-form-field>
             <mat-card-actions>
-                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
+                <button mat-raised-button
+                    style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </form>
     </mat-card-content>
 </mat-card>
-

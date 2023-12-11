@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GiftDetailComponent } from './gift-detail/gift-detail.component';
+import { CookieDetailComponent } from './cookie-detail/cookie-detail.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -12,7 +13,11 @@ const routes: Routes = [{
 {
   path: "gift-detail/:id",
   component: GiftDetailComponent
-}, 
+},
+{
+  path: "cookie-detail/:id",
+  component: CookieDetailComponent
+},  
 {
   path: "",
   redirectTo: "/home",

@@ -32,9 +32,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { GiftDetailComponent } from './gift-detail/gift-detail.component';
-import { CookieDetailComponent } from './landing-view/cookie-detail/cookie-detail.component';
-import { BrownieDetailComponent } from './landing-view/brownie-detail/brownie-detail.component';
-import { CakeDetailComponent } from './landing-view/cake-detail/cake-detail.component';
+import { CookieDetailComponent } from './cookie-detail/cookie-detail.component';
+import { BrownieDetailComponent } from './brownie-detail/brownie-detail.component';
+import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 import { HeaderComponent } from './header/header.component';
 
 
