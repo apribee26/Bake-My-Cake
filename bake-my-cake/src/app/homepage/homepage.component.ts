@@ -10,6 +10,7 @@ import { BrowniesService } from '../services/brownies.service';
 import { CakesService } from '../services/cakes.service';
 import { ProductsService } from '../services/products.service';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @Component({

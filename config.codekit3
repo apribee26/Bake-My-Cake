@@ -414,6 +414,18 @@
       "rC" : 0,
       "tEC" : 2018
     },
+    "\/bake-my-cake\/src\/app\/homepage\/homepage.component-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/bake-my-cake\/src\/app\/homepage\/homepage.component-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/bake-my-cake\/src\/app\/homepage\/homepage.component.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -966,6 +978,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/bake-my-cake\/src\/assets\/images\/icons8-arrow-64.png" : {
+      "ft" : 32768,
+      "iS" : 583,
+      "oA" : 0,
+      "oAP" : "\/bake-my-cake\/src\/assets\/images\/icons8-arrow-64.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/bake-my-cake\/src\/assets\/images\/icons8-santa-48.png" : {
+      "ft" : 32768,
+      "iS" : 1337,
+      "oA" : 0,
+      "oAP" : "\/bake-my-cake\/src\/assets\/images\/icons8-santa-48.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/bake-my-cake\/src\/assets\/images\/IMG_0248.jpeg" : {
       "ft" : 16384,
       "iS" : 59855,
@@ -992,9 +1030,22 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/bake-my-cake\/src\/assets\/images\/Sketches.png" : {
+    "\/bake-my-cake\/src\/assets\/images\/Sketches 3.png" : {
       "ft" : 32768,
       "iS" : 129796,
+      "oA" : 0,
+      "oAP" : "\/bake-my-cake\/src\/assets\/images\/Sketches 3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/bake-my-cake\/src\/assets\/images\/Sketches.png" : {
+      "ft" : 32768,
+      "iS" : 663961,
       "oA" : 0,
       "oAP" : "\/bake-my-cake\/src\/assets\/images\/Sketches.png",
       "oF" : 0,
@@ -1060,6 +1111,17 @@
       "oA" : 0,
       "oAP" : "\/bake-my-cake\/src\/index.html",
       "oF" : 0
+    },
+    "\/bake-my-cake\/src\/main.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/bake-my-cake\/src\/main-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/bake-my-cake\/src\/main.ts" : {
       "cDF" : 0,
