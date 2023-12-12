@@ -67,11 +67,11 @@ export class HomepageComponent {
     })
   }
 
-  onSearchTextChanged(productName: string) {
+  onSearchTextChanged(searchText: string) {
     this.productsService.getProducts().subscribe({
       next: data => {
-        if (productName || productName !== '') {
-          this.products = data.filter(product => product.name?.toLowerCase().includes(productName.toLowerCase()));
+        if (searchText || searchText !== '') {
+          this.products = data.filter(product => product.name?.toLowerCase().includes(searchText.toLowerCase()));
         }
         else
           this.products = data;
@@ -82,4 +82,3 @@ export class HomepageComponent {
     })
   }
 }
-
