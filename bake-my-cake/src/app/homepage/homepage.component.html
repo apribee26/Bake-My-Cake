@@ -15,13 +15,13 @@
     <h1 class="dessheader">{{allGifts}}</h1>
     <div *ngFor="let gift of gifts" class="card">
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{gift?.imageURL}}" alt="" class="imgcard" width="280px" height="250px">
+            <img src="../../assets/images/{{gift?.imageURL}}" alt="gift" class="imgcard">
             <mat-card-content>
                 <h4>{{gift?.name}}</h4>
                 <span>${{gift?.price}}</span>
             </mat-card-content>
             <mat-card-actions>
-                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);"><a routerLink="../gift-detail/{{gift?.id}}">Add to cart</a></button>
+                <button mat-raised-button class="button1"><a routerLink="../gift-detail/{{gift?.id}}">Add to cart</a></button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </mat-card>
@@ -29,7 +29,7 @@
 </div>
 
     <div>
-        <h2 class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</h2>
+        <span class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</span>
     </div>
 
 <!-- Cookies -->
@@ -38,13 +38,13 @@
     <h1 class="dessheader">{{allCookies}}</h1>
     <div *ngFor="let cookie of cookies" class="card">
             <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
+                <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="gift">
                 <mat-card-content>
                     <h4>{{cookie?.name}}</h4>
                     <span>${{cookie?.price}}</span>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-raised-button (click)="addToCart(cookie.price)"  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);"><a routerLink="../cookie-detail/{{cookie?.id}}">Add to cart</a></button>
+                    <button mat-raised-button class="button1"><a routerLink="../cookie-detail/{{cookie?.id}}">Add to cart</a></button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
                 </mat-card-actions>
             </mat-card>     
@@ -57,13 +57,13 @@
     <h1 class="dessheader">{{allBrownies}}</h1>
     <div *ngFor="let brownie of brownies" class="card">
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{brownie?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
+            <img src="../../assets/images/{{brownie?.imageURL}}" class="imgcard" alt="brownie">
             <mat-card-content>
                 <h4>{{brownie?.name}}</h4>
                 <span>${{brownie?.price}}</span>
             </mat-card-content>
             <mat-card-actions>
-                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);"><a routerLink="../brownie-detail/{{brownie?.id}}">Add to cart</a></button>
+                <button mat-raised-button  class="button1"><a routerLink="../brownie-detail/{{brownie?.id}}">Add to cart</a></button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </mat-card>
@@ -76,13 +76,13 @@
     <h1 class="dessheader">{{allCakes}}</h1>
     <div *ngFor="let cake of cakes" class="card">
         <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{cake?.imageURL}}" class="imgcard" alt="" width="280px" height="250px">
+            <img src="../../assets/images/{{cake?.imageURL}}" class="imgcard" alt="cake">
             <mat-card-content>
                 <h4>{{cake?.name}}</h4>
                 <span>${{cake?.price}}</span>
             </mat-card-content>
             <mat-card-actions>
-                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);"> <a routerLink="../cake-detail/{{cake?.id}}">Add to cart</a></button>
+                <button mat-raised-button class="button1"><a routerLink="../cake-detail/{{cake?.id}}">Add to cart</a></button>
                 <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
             </mat-card-actions>
         </mat-card> 

@@ -954,6 +954,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/bake-my-cake\/src\/assets\/images\/Giant Chocolate Chip Cookie Cake - Just a Taste.jpeg" : {
+      "ft" : 16384,
+      "iS" : 244873,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/bake-my-cake\/src\/assets\/images\/Giant Chocolate Chip Cookie Cake - Just a Taste.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/bake-my-cake\/src\/assets\/images\/icons8-arrow-64.png" : {
       "ft" : 32768,
       "iS" : 583,

@@ -81,9 +81,5 @@ export class HomepageComponent {
       }
     })
   }
-  addToCart(item:any):void {
-    this.products.push(item);
-    
-  }
 }
 
