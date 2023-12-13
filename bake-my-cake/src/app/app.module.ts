@@ -16,7 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRippleModule } from '@angular/material/core';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-
+import {MatRadioModule} from '@angular/material/radio';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -79,6 +79,7 @@ import { FavoritesComponent } from './tabs/favorites/favorites.component';
     MatSnackBarModule,
     MatSelectModule,
     MatProgressBarModule,
+    MatRadioModule,
     AppRoutingModule
   ],
   providers: [],

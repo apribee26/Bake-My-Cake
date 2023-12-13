@@ -11,6 +11,7 @@ import { CakesService } from '../services/cakes.service';
 import { ProductsService } from '../services/products.service';
 
 
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -91,4 +92,7 @@ export class HomepageComponent {
       }
     })
   }
+
+  
+  
 }
