@@ -7,3 +7,9 @@
 h4 {
     text-align: center;
 }
+
+.addbtn{
+    border-radius: 20px;
+    color: white; 
+    background-color: rgb(7, 118, 237);
+}

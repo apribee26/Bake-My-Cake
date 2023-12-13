@@ -1,11 +1,17 @@
-.card-content{
-   margin: auto;
-    /* float: left; */
+.card-content {
+    margin: auto;
     padding: 12px;
     width: 300px;
-    /* margin: auto; */
+    margin-bottom: 140px;
 }
 
-h4{
+h4 {
     text-align: center;
+}
+
+.addbtn{
+    border-radius: 20px;
+    color: white; 
+    background-color: rgb(7, 118, 237);
+
 }

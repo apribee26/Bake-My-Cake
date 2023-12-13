@@ -1,23 +1,27 @@
 <app-header></app-header>
-<mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-    <img src="../../assets/images/{{gift.imageURL}}" alt="gifts" width="280px" height="250px">
-    <mat-card-content>
-        <h4><strong>{{gift.name}}</strong></h4>
-        <span><strong>${{gift.price}}</strong></span>
-        <br>
-        <span>{{gift.description}}</span>
-        <form id="edit-form">
-            <div>
-                <mat-radio-group>
-                  <mat-radio-button value="auto">Naughty</mat-radio-button>
-                  <mat-radio-button value="always">Nice</mat-radio-button>
-                </mat-radio-group>
-              </div>
-            <mat-card-actions>
-                <button mat-raised-button  style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
-                <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
-            </mat-card-actions>
-        </form>
-    </mat-card-content>
-</mat-card>
 
+
+    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+        <img src="../../assets/images/{{gift.imageURL}}" alt="gifts" width="280px" height="250px">
+        <mat-card-content>
+            <h4><strong>{{gift.name}}</strong></h4>
+            <span><strong>${{gift.price}}</strong></span>
+            <br>
+            <span>{{gift.description}}</span>
+            <form id="edit-form">
+                <div>
+                    <mat-radio-group>
+                        <mat-radio-button required>Naughty</mat-radio-button>
+                        <mat-radio-button>Nice</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <mat-card-actions>
+                    <button class="addbtn"(click)="openSnackBar('Added to Cart')" >Add to Cart</button>
+                    <a routerLink="../favorite"><button color="warn" type="submit"
+                            mat-icon-button><mat-icon>favorite</mat-icon></button></a>
+                </mat-card-actions>
+            </form>
+        </mat-card-content>
+    </mat-card>
+  
+<app-footer></app-footer>

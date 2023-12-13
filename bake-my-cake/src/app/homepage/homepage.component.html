@@ -10,12 +10,15 @@
 <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
 
 <!-- Dashboard -->
+<section>
 <div class="dash">
   <img src="../../assets/images/Sketches 7.png" alt="" class="aboutus">
   <img src="../../assets/images/Sketches 6.png" alt="" class="sid1">
 </div>
+</section>
 
 <!-- Gifts -->
+<section>
 <div class="container">
   <h1 class="dessheader">{{allGifts}}</h1>
   <div *ngFor="let gift of gifts" class="card">
@@ -35,9 +38,11 @@
 
 <!-- Widget -->
 <div>
-  <span class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</span>
-  
-
+  <!-- <img src="../../assets/images/PlanetOatFamilyShot-1024x683.jpg" alt="oats" class="widget2"> -->
+  <a href="https://www.target.com/?gclid=Cj0KCQiAyeWrBhDDARIsAGP1mWRxPkYRknAfCj6dkQIDssq-LE6XRjCCygtPYsTzm8QcOODmJVIt00YaAnmcEALw_wcB"><img src="../../assets/images/13063681248752102642.jpeg" alt="" class="widget2"></a>
+ 
+</div>
+ 
 <!-- Cookies -->
 
 <div class="container">
@@ -96,82 +101,6 @@
     </mat-card>
   </div>
 </div>
+</section>
 
-
-<!-- Footer -->
-<footer>
-  <div class="grid-layout">
-    <div class="sec">
-      <!-- Footer-links -->
-      <ul>
-        <li>
-          <!-- Footer Header -->
-          <h4 style="margin-left:38px;">Follow Us</h4>
-          <div class="social">
-            <!-- social media links -->
-            <ul>
-              <li><a href="#"><img src="../../assets/images/icons8-facebook-100.png" alt="" srcset=""></a></li>
-              <li><a href="#"><img src="../../assets/images/icons8-twitter-64.png" alt=""></a></li>
-              <li><a href="#"><img src="../../assets/images/icons8-tik-tok-100.png" alt="" srcset=""></a></li>
-              <li><a href="#"><img src="../../assets/images/icons8-linked-in-48.png" alt="" srcset=""></a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="sec">
-      <!-- Footer-links -->
-      <ul>
-        <li><strong>
-            <!-- Footer Header -->
-            <p class="foott2">Shop</p>
-          </strong></li>
-        <li><a href="#"><i aria-hidden="true"></i>All Flavors</a></li>
-        <li><a href="#"><i aria-hidden="true"></i>Gifts</a></li>
-        <li><a href="#"><i aria-hidden="true"></i>Wholesale</a></li>
-      </ul>
-    </div>
-
-
-    <div class="sec">
-      <!-- Footer-links -->
-      <ul>
-        <li><strong>
-            <!-- Footer Header -->
-            <p class="foott2">Information</p>
-          </strong></li>
-        <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
-        <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
-        <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
-      </ul>
-    </div>
-
-
-    <div class="sec">
-      <!-- Footer-links -->
-      <ul>
-        <li><strong>
-            <!-- Footer Header -->
-            <p class="foott2">About</p>
-          </strong></li>
-        <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
-        <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
-        <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>Get the Inside Scoop</h2>
-      <span>Sign up for Sid's newsletter. Come for the cookies,stay for the inspo.#cookie4hope</span>
-     <!-- email -->
-    </div>
-  </div>
-  <hr>
-  <div style="height:80px; padding: 20px;margin-top: 30px;">
-    <span style="margin-left: 10px;">Refund policy</span>
-    <span style="margin-left: 10px;">Privacy policy</span>
-    <span style="margin-left: 10px;">Terms of service</span>
-    <span style="margin-left: 10px;">Shipping policy</span>
-  </div>
-</footer>
+<app-footer></app-footer>

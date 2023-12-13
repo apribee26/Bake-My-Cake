@@ -3,13 +3,10 @@ import { Gift } from '../models/desserts';
 import { Cookie } from '../models/cookies';
 import { Brownie } from '../models/brownies';
 import { Cake } from '../models/cakes';
-import { Product } from '../models/products';
 import { GiftsService } from '../services/gifts.service';
 import { CookiesService } from '../services/cookies.service';
 import { BrowniesService } from '../services/brownies.service';
 import { CakesService } from '../services/cakes.service';
-import { ProductsService } from '../services/products.service';
-
 
 
 @Component({
@@ -24,8 +21,6 @@ export class HomepageComponent {
   cookies: Cookie[] = [];
   brownies: Brownie[] = [];
   cakes: Cake[] = [];
-  products: Product[]=[];
-  
   
   allGifts: string = "Gifts";
   allCookies: string = "Cookies";
@@ -35,8 +30,7 @@ export class HomepageComponent {
   constructor(private giftsService: GiftsService,
     private cookiesService: CookiesService,
     private browniesService: BrowniesService,
-    private cakesService: CakesService,
-    private productsService: ProductsService) { }
+    private cakesService: CakesService) { }
 
   ngOnInit(): void {
 
@@ -79,13 +73,49 @@ export class HomepageComponent {
   }
 
   onSearchTextChanged(searchText: string) {
-    this.productsService.getProducts().subscribe({
+    this.giftsService.getGifts().subscribe({
       next: data => {
         if (searchText || searchText !== '') {
-          this.products = data.filter(product => product.name?.toLowerCase().includes(searchText.toLowerCase()));
+          this.gifts = data.filter(gift => gift.name?.toLowerCase().includes(searchText.toLowerCase()));
         }
         else
-          this.products = data;
+          this.gifts = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
+      }
+    }),    
+      this.cookiesService.getCookies().subscribe({
+      next: data => {
+        if (searchText || searchText !== '') {
+          this.cookies = data.filter(cookie => cookie.name?.toLowerCase().includes(searchText.toLowerCase()));
+        }
+        else
+          this.cookies = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
+      }
+    })
+    this.browniesService.getBrownies().subscribe({
+      next: data => {
+        if (searchText || searchText !== '') {
+          this.brownies = data.filter(brownie => brownie.name?.toLowerCase().includes(searchText.toLowerCase()));
+        }
+        else
+          this.brownies = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
+      }
+    })
+    this.cakesService.getCakes().subscribe({
+      next: data => {
+        if (searchText || searchText !== '') {
+          this.cakes = data.filter(cake => cake.name?.toLowerCase().includes(searchText.toLowerCase()));
+        }
+        else
+          this.cakes = data;
       },
       error: e => {
         alert("Network Error !! Please Try Again Later");

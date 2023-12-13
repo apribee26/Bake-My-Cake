@@ -30,13 +30,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
-import { ShoppingCartComponent } from './tabs/shopping-cart/shopping-cart.component';
+
 import { GiftDetailComponent } from './operating-view/gift-detail/gift-detail.component';
 import { CookieDetailComponent } from './operating-view/cookie-detail/cookie-detail.component';
 import { BrownieDetailComponent } from './operating-view/brownie-detail/brownie-detail.component';
 import { CakeDetailComponent } from './operating-view/cake-detail/cake-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { FavoritesComponent } from './tabs/favorites/favorites.component';
+import { FooterComponent } from './footer/footer.component';
+import { ShoppingCartComponent } from './tabs/favorites/shopping-cart/shopping-cart.component';
 
 
 
@@ -48,13 +50,15 @@ import { FavoritesComponent } from './tabs/favorites/favorites.component';
     SearchComponent,
     HomepageComponent,
     NotFoundComponent,
-    ShoppingCartComponent,
+ 
     GiftDetailComponent,
     CookieDetailComponent,
     BrownieDetailComponent,
     CakeDetailComponent,
     HeaderComponent,
     FavoritesComponent,
+    FooterComponent,
+    ShoppingCartComponent,
   
 
 

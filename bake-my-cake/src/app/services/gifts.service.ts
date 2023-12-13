@@ -17,4 +17,8 @@ export class GiftsService {
   getGift(id?: number) : Observable<Gift> {
     return this.http.get<Gift>(`${this.URL}/${id}`);
   }
+
+  addGift(gift:Gift) {
+    return this.http.post<Gift>(this.URL,gift);
+  }
 }

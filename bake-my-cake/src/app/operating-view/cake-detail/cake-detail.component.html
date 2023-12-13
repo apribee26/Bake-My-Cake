@@ -19,10 +19,10 @@
                 <mat-radio-button>SNICKERS® Chopped</mat-radio-button>
               </mat-radio-group>
             <mat-card-actions>
-                <button mat-raised-button
-                    style="border-radius: 20px;color: white; background-color: rgb(7, 118, 237);;">Add to cart</button>
-                    <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
+                <button class="addbtn"(click)="openSnackBar('Added to Cart')" >Add to Cart</button>
+                <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
             </mat-card-actions>
         </form>
     </mat-card-content>
 </mat-card>
+<app-footer></app-footer>

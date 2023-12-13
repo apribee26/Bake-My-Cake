@@ -6,7 +6,7 @@ import { BrownieDetailComponent } from './operating-view/brownie-detail/brownie-
 import { CakeDetailComponent } from './operating-view/cake-detail/cake-detail.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ShoppingCartComponent } from './tabs/shopping-cart/shopping-cart.component';
+import { ShoppingCartComponent } from './tabs/favorites/shopping-cart/shopping-cart.component';
 import { FavoritesComponent } from './tabs/favorites/favorites.component';
 
 

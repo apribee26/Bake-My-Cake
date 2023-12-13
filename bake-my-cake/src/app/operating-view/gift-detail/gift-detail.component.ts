@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Gift } from 'src/app/models/desserts';
 import { GiftsService } from 'src/app/services/gifts.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { GiftsService } from 'src/app/services/gifts.service';
 export class GiftDetailComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
-    private giftsService: GiftsService) { }
+    private giftsService: GiftsService, private _snackBar: MatSnackBar) { }
 
   gift: Gift = { name: '', price: '', description: '' };
   ngOnInit(): void {
@@ -23,4 +24,14 @@ export class GiftDetailComponent implements OnInit {
       })
     })
   }
+  openSnackBar(message: string) {
+    this._snackBar.open(message, 'Close',
+      {
+        duration: 3000,
+        panelClass: ['mat-toolbar', 'mat-primary']
+      })
+  }
+
 }
+
+

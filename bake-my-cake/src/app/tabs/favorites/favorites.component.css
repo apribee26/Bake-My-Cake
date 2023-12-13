@@ -1,0 +1,11 @@
+
+.title{
+    font-size: 30px;
+    margin-left: 600px;
+    padding-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.background{
+    background-color: rgb(252, 110, 133);
+}

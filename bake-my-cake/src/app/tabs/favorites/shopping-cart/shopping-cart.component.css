@@ -1,0 +1,25 @@
+.cart {
+    background-color: black;
+    height:1200px;
+    display: flex;
+}
+
+.hungrysid{
+    width:550px;
+    height:900px;
+    margin-left:40px;
+}
+
+
+#message {
+    background-color: black;
+    color: azure;
+    width: 500px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+a {
+    color: #007bf7;
+    text-decoration: none;
+}
