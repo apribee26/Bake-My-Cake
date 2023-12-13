@@ -1,10 +1,20 @@
+/* Widgets */
+.widget1{ 
+    width: 450px;;
+    height:300px;
+    margin-left:525px;
+}
+
 /* Dashboard */
 .dash {
     display: flex;
 }
-.sid1 {
-    margin-left: 10px;
-    width: 500px;
+.aboutus{
+    width:900px;
+}
+
+.sid1 { 
+    width: 700px;   
 }
 
 a:link {
@@ -38,12 +48,18 @@ a {
 .imgcard{
     width: 280px;
     height:250px;
+    border-radius:115px;
 }
 
 .button1{
     border-radius: 30px;
 }
 /* Footer */
+
+ul{
+    list-style-type: none;
+}
+
 .grid-layout {
     height: 200px;
     max-width: 100%;
@@ -51,7 +67,10 @@ a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 200px 200px;
-  
+}
+
+.grid-layout .sec .foot1 {
+    margin-left: 40px;
 }
 
 .grid-layout .sec .foott2 {
@@ -86,6 +105,4 @@ a {
     border-radius: 50%;
 }
 
-ul {
-    list-style-type: none;
-}
+

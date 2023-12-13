@@ -9,8 +9,6 @@ import { CookiesService } from '../services/cookies.service';
 import { BrowniesService } from '../services/brownies.service';
 import { CakesService } from '../services/cakes.service';
 import { ProductsService } from '../services/products.service';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @Component({
@@ -45,26 +43,38 @@ export class HomepageComponent {
       next: (data) => {
         console.log('Gifts', data);
         this.gifts = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
       }
-    })
+    });
     this.cookiesService.getCookies().subscribe({
       next: (data) => {
         console.log('Cookies', data);
         this.cookies = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
       }
-    })
+    });
     this.browniesService.getBrownies().subscribe({
       next: (data) => {
         console.log('Brownies', data);
         this.brownies = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
       }
-    })
+    });
     this.cakesService.getCakes().subscribe({
       next: (data) => {
         console.log('Cakes', data);
         this.cakes = data;
+      },
+      error: e => {
+        alert("Network Error !! Please Try Again Later");
       }
-    })
+    });
   }
 
   onSearchTextChanged(searchText: string) {

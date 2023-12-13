@@ -1,170 +1,176 @@
 <!-- Header -->
 <app-header></app-header>
 
+<!-- Widget -->
+<div>
+  <a href="https://sesameplace.com/san-diego/events/a-very-furry-christmas/"><img
+      src="../../assets/images/Sketches 4.png" alt="ad" class="widget1"></a>
+</div>
 <!-- Search -->
 <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
 
 <!-- Dashboard -->
 <div class="dash">
-  <img src="../../assets/images/Sketches.png" alt="" style="margin-left:1px; width:900px;">
-  <img src="../../assets/images/1sid.png" alt="" class="sid1">
+  <img src="../../assets/images/Sketches 7.png" alt="" class="aboutus">
+  <img src="../../assets/images/Sketches 6.png" alt="" class="sid1">
 </div>
 
 <!-- Gifts -->
 <div class="container">
-    <h1 class="dessheader">{{allGifts}}</h1>
-    <div *ngFor="let gift of gifts" class="card">
-        <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{gift?.imageURL}}" alt="gift" class="imgcard">
-            <mat-card-content>
-                <h4>{{gift?.name}}</h4>
-                <span>${{gift?.price}}</span>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button class="button1"><a routerLink="../gift-detail/{{gift?.id}}">Add to cart</a></button>
-                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-            </mat-card-actions>
-        </mat-card>
-    </div>
+  <h1 class="dessheader">{{allGifts}}</h1>
+  <div *ngFor="let gift of gifts" class="card">
+    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+      <img src="../../assets/images/{{gift?.imageURL}}" alt="gift" class="imgcard">
+      <mat-card-content>
+        <h4>{{gift?.name}}</h4>
+        <span>${{gift?.price}}</span>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="button1"><a routerLink="../gift-detail/{{gift?.id}}">Add to cart</a></button>
+        <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
 
-    <div>
-        <span class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</span>
-    </div>
+<!-- Widget -->
+<div>
+  <span class="widget3">Forbes Buzzfeed FORTUNE Inc. Shark Tank BUSINESS INSIDER</span>
+</div>
 
 <!-- Cookies -->
 
 <div class="container">
-    <h1 class="dessheader">{{allCookies}}</h1>
-    <div *ngFor="let cookie of cookies" class="card">
-            <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-                <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="gift">
-                <mat-card-content>
-                    <h4>{{cookie?.name}}</h4>
-                    <span>${{cookie?.price}}</span>
-                </mat-card-content>
-                <mat-card-actions>
-                    <button mat-raised-button class="button1"><a routerLink="../cookie-detail/{{cookie?.id}}">Add to cart</a></button>
-                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-                </mat-card-actions>
-            </mat-card>     
-    </div>
+  <h1 class="dessheader">{{allCookies}}</h1>
+  <div *ngFor="let cookie of cookies" class="card">
+    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+      <img src="../../assets/images/{{cookie?.imageURL}}" class="imgcard" alt="gift">
+      <mat-card-content>
+        <h4>{{cookie?.name}}</h4>
+        <span>${{cookie?.price}}</span>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="button1"><a routerLink="../cookie-detail/{{cookie?.id}}">Add to
+            cart</a></button>
+            <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
 
 <!-- Brownies -->
 
 <div class="container">
-    <h1 class="dessheader">{{allBrownies}}</h1>
-    <div *ngFor="let brownie of brownies" class="card">
-        <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{brownie?.imageURL}}" class="imgcard" alt="brownie">
-            <mat-card-content>
-                <h4>{{brownie?.name}}</h4>
-                <span>${{brownie?.price}}</span>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button  class="button1"><a routerLink="../brownie-detail/{{brownie?.id}}">Add to cart</a></button>
-                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-            </mat-card-actions>
-        </mat-card>
-    </div>
+  <h1 class="dessheader">{{allBrownies}}</h1>
+  <div *ngFor="let brownie of brownies" class="card">
+    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+      <img src="../../assets/images/{{brownie?.imageURL}}" class="imgcard" alt="brownie">
+      <mat-card-content>
+        <h4>{{brownie?.name}}</h4>
+        <span>${{brownie?.price}}</span>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="button1"><a routerLink="../brownie-detail/{{brownie?.id}}">Add to
+            cart</a></button>
+            <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
 
 <!-- Cakes -->
 
 <div class="container">
-    <h1 class="dessheader">{{allCakes}}</h1>
-    <div *ngFor="let cake of cakes" class="card">
-        <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
-            <img src="../../assets/images/{{cake?.imageURL}}" class="imgcard" alt="cake">
-            <mat-card-content>
-                <h4>{{cake?.name}}</h4>
-                <span>${{cake?.price}}</span>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button class="button1"><a routerLink="../cake-detail/{{cake?.id}}">Add to cart</a></button>
-                <button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button>
-            </mat-card-actions>
-        </mat-card> 
-    </div>
+  <h1 class="dessheader">{{allCakes}}</h1>
+  <div *ngFor="let cake of cakes" class="card">
+    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+      <img src="../../assets/images/{{cake?.imageURL}}" class="imgcard" alt="cake">
+      <mat-card-content>
+        <h4>{{cake?.name}}</h4>
+        <span>${{cake?.price}}</span>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="button1"><a routerLink="../cake-detail/{{cake?.id}}">Add to cart</a></button>
+        <a routerLink="../favorite"><button color="warn" mat-icon-button><mat-icon>favorite</mat-icon></button></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
 
 
-<section>
-    <footer>
-        <div class="grid-layout">
-          <div class="sec">
-            <!-- Footer-links -->
+<!-- Footer -->
+<footer>
+  <div class="grid-layout">
+    <div class="sec">
+      <!-- Footer-links -->
+      <ul>
+        <li>
+          <!-- Footer Header -->
+          <h4 style="margin-left:38px;">Follow Us</h4>
+          <div class="social">
+            <!-- social media links -->
             <ul>
-              <li>
-                  <!-- Footer Header -->
-                  <h4 class="foott2">Follow Us</h4>
-                  <div class="social">
-                    <!-- social media links -->
-                    <ul>
-                      <li><a href="#"><i></i></a></li>
-                      <li><a href="#"><i></i></a></li>
-                      <li><a href="#"><i></i></a></li>
-                      <li><a href="#"><i></i></a></li>
-                    </ul>
-                  </div>
-                </li>
+              <li><a href="#"><img src="../../assets/images/icons8-facebook-100.png" alt="" srcset=""></a></li>
+              <li><a href="#"><img src="../../assets/images/icons8-twitter-64.png" alt=""></a></li>
+              <li><a href="#"><img src="../../assets/images/icons8-tik-tok-100.png" alt="" srcset=""></a></li>
+              <li><a href="#"><img src="../../assets/images/icons8-linked-in-48.png" alt="" srcset=""></a></li>
             </ul>
           </div>
-
-          <div class="sec">
-            <!-- Footer-links -->
-            <ul>
-              <li><strong>
-                  <!-- Footer Header -->
-                  <p class="foott2">Shop</p>
-                </strong></li>
-              <li><a href="#"><i aria-hidden="true"></i>All Flavors</a></li>
-              <li><a href="#"><i aria-hidden="true"></i>Gifts</a></li>
-              <li><a href="#"><i aria-hidden="true"></i>Wholesale</a></li>
-            </ul>
-          </div>
-
-
-          <div class="sec">
-            <!-- Footer-links -->
-            <ul>
-              <li><strong>
-                  <!-- Footer Header -->
-                  <p class="foott2">Information</p>
-                </strong></li>
-              <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
-              <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
-              <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
-            </ul>
-          </div>
-
-
-          <div class="sec">
-            <!-- Footer-links -->
-            <ul>
-              <li><strong>
-                  <!-- Footer Header -->
-                  <p class="foott2">About</p>
-                </strong></li>
-              <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
-              <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
-              <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
-            </ul>
-          </div>
-
-          <div >
-            <h2>Get the Inside Scoop</h2>
-            <span>Sign up for Sid's newsletter. Come for the cookies,stay for the inspo.#cookie4hope</span>
-            
-          </div>
-        </div>
-        <hr>
-        <div style="height:80px; padding: 20px;margin-top: 30px;">
-        <span style="margin-left: 10px;">Refund policy</span>
-        <span style="margin-left: 10px;">Privacy policy</span>
-        <span style="margin-left: 10px;">Terms of service</span>
-        <span style="margin-left: 10px;">Shipping policy</span>
+        </li>
+      </ul>
     </div>
-      </footer>
-</section>
+
+    <div class="sec">
+      <!-- Footer-links -->
+      <ul>
+        <li><strong>
+            <!-- Footer Header -->
+            <p class="foott2">Shop</p>
+          </strong></li>
+        <li><a href="#"><i aria-hidden="true"></i>All Flavors</a></li>
+        <li><a href="#"><i aria-hidden="true"></i>Gifts</a></li>
+        <li><a href="#"><i aria-hidden="true"></i>Wholesale</a></li>
+      </ul>
+    </div>
+
+
+    <div class="sec">
+      <!-- Footer-links -->
+      <ul>
+        <li><strong>
+            <!-- Footer Header -->
+            <p class="foott2">Information</p>
+          </strong></li>
+        <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
+        <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
+        <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
+      </ul>
+    </div>
+
+
+    <div class="sec">
+      <!-- Footer-links -->
+      <ul>
+        <li><strong>
+            <!-- Footer Header -->
+            <p class="foott2">About</p>
+          </strong></li>
+        <li><a href="#"><i aria-hidden="true"></i> Conferences</a></li>
+        <li><a href="#"><i aria-hidden="true"></i> Executive Retreats</a></li>
+        <li><a href="#"><i aria-hidden="true"></i> Team Building events</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Get the Inside Scoop</h2>
+      <span>Sign up for Sid's newsletter. Come for the cookies,stay for the inspo.#cookie4hope</span>
+    </div>
+  </div>
+  <hr>
+  <div style="height:80px; padding: 20px;margin-top: 30px;">
+    <span style="margin-left: 10px;">Refund policy</span>
+    <span style="margin-left: 10px;">Privacy policy</span>
+    <span style="margin-left: 10px;">Terms of service</span>
+    <span style="margin-left: 10px;">Shipping policy</span>
+  </div>
+</footer>
